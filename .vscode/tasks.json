@@ -3,7 +3,7 @@
   "tasks": [{
       "label": "Build Android APK",
       "type": "shell",
-      "command": "flutter build apk --release",
+      "command": "flutter build apk --release --no-tree-shake-icons",
       "group": {
         "kind": "build",
         "isDefault": true
@@ -12,7 +12,7 @@
     {
       "label": "Build iOS for TestFlight",
       "type": "shell",
-      "command": "flutter clean && flutter pub get && flutter build ipa --release",
+      "command": "flutter clean && flutter pub get && flutter build ipa --release --no-tree-shake-icons",
       "group": {
         "kind": "build",
         "isDefault": false
