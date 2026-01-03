@@ -127,7 +127,6 @@ class _CharactersPageState extends State<CharactersPage> {
       },
       child: ListView.builder(
         controller: _scrollController,
-        padding: EdgeInsets.all(layout.padding.medium),
         itemCount:
             hasHeaderItem + state.characters.length + (state.hasMore ? 1 : 0),
         itemBuilder: (context, index) {

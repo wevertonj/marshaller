@@ -97,7 +97,7 @@ class _SeasonDetailPageState extends State<SeasonDetailPage> {
         children: [
           Container(
             padding: EdgeInsets.all(layout.padding.large),
-            margin: EdgeInsets.all(layout.padding.medium),
+            margin: EdgeInsets.only(bottom: layout.padding.large),
             decoration: BoxDecoration(
               gradient: LinearGradient(
                 colors: [
@@ -139,81 +139,78 @@ class _SeasonDetailPageState extends State<SeasonDetailPage> {
             ),
           ),
 
-          Padding(
-            padding: EdgeInsets.symmetric(horizontal: layout.padding.medium),
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                Text(
-                  l10n.episodes,
-                  style: theme.textTheme.titleLarge?.copyWith(
-                    fontWeight: FontWeight.bold,
-                  ),
+          Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Text(
+                l10n.episodes,
+                style: theme.textTheme.titleLarge?.copyWith(
+                  fontWeight: FontWeight.bold,
                 ),
-                SizedBox(height: layout.spacing.medium),
-                ListView.separated(
-                  shrinkWrap: true,
-                  physics: const NeverScrollableScrollPhysics(),
-                  itemCount: state.episodes.length,
-                  separatorBuilder: (_, _) =>
-                      SizedBox(height: layout.spacing.small),
-                  itemBuilder: (context, index) {
-                    final episode = state.episodes[index];
-                    return AppCard(
-                      leading: Container(
-                        width: 60,
-                        decoration: BoxDecoration(
-                          color: theme.colorScheme.tertiaryContainer,
-                        ),
-                        child: Center(
-                          child: Text(
-                            episode.episodeNumber.toString(),
-                            style: theme.textTheme.titleLarge?.copyWith(
-                              color: theme.colorScheme.onTertiaryContainer,
-                              fontWeight: FontWeight.bold,
-                            ),
+              ),
+              SizedBox(height: layout.spacing.medium),
+              ListView.separated(
+                shrinkWrap: true,
+                physics: const NeverScrollableScrollPhysics(),
+                itemCount: state.episodes.length,
+                separatorBuilder: (_, _) =>
+                    SizedBox(height: layout.spacing.small),
+                itemBuilder: (context, index) {
+                  final episode = state.episodes[index];
+                  return AppCard(
+                    leading: Container(
+                      width: 60,
+                      decoration: BoxDecoration(
+                        color: theme.colorScheme.tertiaryContainer,
+                      ),
+                      child: Center(
+                        child: Text(
+                          episode.episodeNumber.toString(),
+                          style: theme.textTheme.titleLarge?.copyWith(
+                            color: theme.colorScheme.onTertiaryContainer,
+                            fontWeight: FontWeight.bold,
                           ),
                         ),
                       ),
-                      title: Text(episode.name),
-                      subtitle: Text(
-                        DateFormatter.formatDate(episode.airDate),
-                        style: theme.textTheme.bodySmall,
-                      ),
-                      onTap: () => AppNavigation.pushNamed(
-                        AppRoutes.episodeDetail,
-                        pathParameters: {'id': episode.id.toString()},
-                      ),
-                    );
+                    ),
+                    title: Text(episode.name),
+                    subtitle: Text(
+                      DateFormatter.formatDate(episode.airDate),
+                      style: theme.textTheme.bodySmall,
+                    ),
+                    onTap: () => AppNavigation.pushNamed(
+                      AppRoutes.episodeDetail,
+                      pathParameters: {'id': episode.id.toString()},
+                    ),
+                  );
+                },
+              ),
+              SizedBox(height: layout.spacing.large),
+              Text(
+                l10n.characters,
+                style: theme.textTheme.titleLarge?.copyWith(
+                  fontWeight: FontWeight.bold,
+                ),
+              ),
+              SizedBox(height: layout.spacing.medium),
+              if (state.isLoadingCharacters)
+                _buildCharactersShimmer(context)
+              else if (characters.isEmpty)
+                Text(l10n.noCharactersFound)
+              else
+                ListView.separated(
+                  shrinkWrap: true,
+                  physics: const NeverScrollableScrollPhysics(),
+                  itemCount: characters.length,
+                  separatorBuilder: (_, _) =>
+                      SizedBox(height: layout.spacing.small),
+                  itemBuilder: (context, index) {
+                    final character = characters[index];
+                    return _CharacterCard(character: character);
                   },
                 ),
-                SizedBox(height: layout.spacing.large),
-                Text(
-                  l10n.characters,
-                  style: theme.textTheme.titleLarge?.copyWith(
-                    fontWeight: FontWeight.bold,
-                  ),
-                ),
-                SizedBox(height: layout.spacing.medium),
-                if (state.isLoadingCharacters)
-                  _buildCharactersShimmer(context)
-                else if (characters.isEmpty)
-                  Text(l10n.noCharactersFound)
-                else
-                  ListView.separated(
-                    shrinkWrap: true,
-                    physics: const NeverScrollableScrollPhysics(),
-                    itemCount: characters.length,
-                    separatorBuilder: (_, _) =>
-                        SizedBox(height: layout.spacing.small),
-                    itemBuilder: (context, index) {
-                      final character = characters[index];
-                      return _CharacterCard(character: character);
-                    },
-                  ),
-                SizedBox(height: layout.spacing.large),
-              ],
-            ),
+              SizedBox(height: layout.spacing.large),
+            ],
           ),
         ],
       ),
