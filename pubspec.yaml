@@ -73,6 +73,7 @@ dev_dependencies:
   mocktail: ^1.0.4
   build_runner: ^2.10.4
   sqflite_common_ffi: ^2.3.5
+  flutter_launcher_icons: ^0.14.4
 
 flutter:
   generate: true
@@ -81,3 +82,11 @@ flutter:
   assets:
     - assets/animations/
     - assets/images/
+
+flutter_launcher_icons:
+  android: "launcher_icon"
+  ios: true
+  image_path: "assets/images/marshaller-transparent.png"
+  image_path_ios: "assets/images/marshaller.png"
+  min_sdk_android: 21
+
