@@ -1,3 +1,4 @@
+import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:get_it/get_it.dart';
@@ -6,10 +7,30 @@ import 'package:marshaller/config/go_router.dart';
 import 'package:marshaller/domain/enums/themes_color.dart';
 import 'package:marshaller/ui/core/theme/app_theme.dart';
 import 'package:marshaller/ui/settings/viewmodels/settings_viewmodel.dart';
+import 'package:marshaller/utils/helpers/app_logger.dart';
 import 'package:marshaller/utils/l10n/generated/app_localizations.dart';
+
+Future<bool> _initializeFirebase() async {
+  try {
+    await Firebase.initializeApp();
+    return true;
+  } catch (e) {
+    return false;
+  }
+}
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
+
+  final firebaseInitialized = await _initializeFirebase();
+  if (!firebaseInitialized) {
+    AppLogger.warning(
+      '⚠️ Firebase não foi inicializado. '
+      'Configure o firebase_options.dart para habilitar Firebase, '
+      'Push Notifications e Crashlytics.',
+    );
+  }
+
   setupDependencies();
   runApp(const MarshallerApp());
 }
