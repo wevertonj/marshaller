@@ -53,6 +53,7 @@ void main() {
             species: null,
             type: null,
             gender: null,
+            name: null,
           ));
 
           expect(states.length, 2);
@@ -85,6 +86,7 @@ void main() {
             species: null,
             type: null,
             gender: null,
+            name: null,
           ));
 
           expect(states.length, 2);
@@ -116,6 +118,7 @@ void main() {
           species: null,
           type: null,
           gender: null,
+          name: null,
         ));
 
         final secondPageResult = PaginatedResult(
@@ -158,6 +161,7 @@ void main() {
           species: null,
           type: null,
           gender: null,
+          name: null,
         ));
 
         await viewModel.loadMoreCommand.execute();

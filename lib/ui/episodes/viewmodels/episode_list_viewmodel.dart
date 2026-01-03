@@ -9,19 +9,24 @@ class EpisodeListViewModel extends ChangeNotifier {
   EpisodeListViewModel({required RickMortyRepository repository})
     : _repository = repository;
   final state = ValueNotifier<EpisodeListState>(const EpisodeListInitial());
-  late final loadEpisodesCommand = Command1<Unit, bool>(_loadEpisodes);
+  late final loadEpisodesCommand =
+      Command1<Unit, ({bool forceRefresh, String? name})>(_loadEpisodes);
   late final loadMoreCommand = Command0(_loadMore);
-  AsyncResult<Unit> _loadEpisodes(bool forceRefresh) async {
+  AsyncResult<Unit> _loadEpisodes(
+    ({bool forceRefresh, String? name}) params,
+  ) async {
     state.value = const EpisodeListLoading();
     final result = await _repository.getEpisodes(
       page: 1,
-      forceRefresh: forceRefresh,
+      forceRefresh: params.forceRefresh,
+      name: params.name,
     );
     result.fold(
       (paginatedResult) => state.value = EpisodeListLoaded(
         episodes: paginatedResult.items,
         hasMore: paginatedResult.hasMore,
         currentPage: 1,
+        name: params.name,
       ),
       (error) => state.value = EpisodeListError(error.toString()),
     );
@@ -35,12 +40,16 @@ class EpisodeListViewModel extends ChangeNotifier {
     }
     state.value = currentState.copyWith(isLoadingMore: true);
     final nextPage = currentState.currentPage + 1;
-    final result = await _repository.getEpisodes(page: nextPage);
+    final result = await _repository.getEpisodes(
+      page: nextPage,
+      name: currentState.name,
+    );
     result.fold(
-      (paginatedResult) => state.value = EpisodeListLoaded(
+      (paginatedResult) => state.value = currentState.copyWith(
         episodes: [...currentState.episodes, ...paginatedResult.items],
         hasMore: paginatedResult.hasMore,
         currentPage: nextPage,
+        isLoadingMore: false,
       ),
       (error) => state.value = currentState.copyWith(isLoadingMore: false),
     );

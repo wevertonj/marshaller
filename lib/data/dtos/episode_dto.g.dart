@@ -32,7 +32,9 @@ Map<String, dynamic> _$EpisodeDtoToJson(EpisodeDto instance) =>
 EpisodeListResponseDto _$EpisodeListResponseDtoFromJson(
   Map<String, dynamic> json,
 ) => EpisodeListResponseDto(
-  info: PaginationInfoDto.fromJson(json['info'] as Map<String, dynamic>),
+  info: json['info'] == null
+      ? null
+      : PaginationInfoDto.fromJson(json['info'] as Map<String, dynamic>),
   results: (json['results'] as List<dynamic>)
       .map((e) => EpisodeDto.fromJson(e as Map<String, dynamic>))
       .toList(),

@@ -12,6 +12,7 @@ import 'package:marshaller/ui/core/theme/extensions/theme_extensions.dart';
 import 'package:marshaller/ui/core/widgets/app_shimmer.dart';
 import 'package:marshaller/ui/core/widgets/layouts/app_scaffold.dart';
 import 'package:marshaller/ui/core/widgets/app_card.dart';
+import 'package:marshaller/ui/core/widgets/inputs/app_input_search.dart';
 import 'package:marshaller/utils/helpers/app_navigation.dart';
 import 'package:marshaller/utils/l10n/generated/app_localizations.dart';
 
@@ -28,6 +29,8 @@ class CharactersPage extends StatefulWidget {
 class _CharactersPageState extends State<CharactersPage> {
   late final CharacterListViewModel _viewModel;
   final ScrollController _scrollController = ScrollController();
+  final TextEditingController _searchController = TextEditingController();
+
   @override
   void initState() {
     super.initState();
@@ -37,6 +40,7 @@ class _CharactersPageState extends State<CharactersPage> {
       species: widget.species,
       type: widget.type,
       gender: widget.gender,
+      name: null,
     ));
     _scrollController.addListener(_onScroll);
   }
@@ -44,6 +48,7 @@ class _CharactersPageState extends State<CharactersPage> {
   @override
   void dispose() {
     _scrollController.dispose();
+    _searchController.dispose();
     _viewModel.dispose();
     super.dispose();
   }
@@ -90,9 +95,24 @@ class _CharactersPageState extends State<CharactersPage> {
   Widget _buildShimmerList(BuildContext context) {
     final layout = Theme.of(context).layout;
     return ListView.builder(
-      padding: EdgeInsets.all(layout.padding.medium),
-      itemCount: 10,
-      itemBuilder: (context, index) => _buildShimmerCard(context),
+      itemCount: 11,
+      itemBuilder: (context, index) {
+        if (index == 0) {
+          return Padding(
+            padding: EdgeInsets.only(bottom: layout.spacing.medium),
+            child: AppShimmer(
+              child: Container(
+                height: 56,
+                decoration: BoxDecoration(
+                  color: Colors.white,
+                  borderRadius: BorderRadius.circular(layout.radius.small),
+                ),
+              ),
+            ),
+          );
+        }
+        return _buildShimmerCard(context);
+      },
     );
   }
 
@@ -116,6 +136,11 @@ class _CharactersPageState extends State<CharactersPage> {
     final layout = Theme.of(context).layout;
     final l10n = AppLocalizations.of(context);
     final hasHeaderItem = _hasFilter ? 1 : 0;
+    final hasSearchItem = 1;
+    final hasEmptyResults = state.characters.isEmpty;
+    final hasEmptyItem = hasEmptyResults ? 1 : 0;
+    final specialItems = hasHeaderItem + hasSearchItem + hasEmptyItem;
+
     return RefreshIndicator(
       onRefresh: () async {
         await _viewModel.loadCharactersCommand.execute((
@@ -123,17 +148,34 @@ class _CharactersPageState extends State<CharactersPage> {
           species: widget.species,
           type: widget.type,
           gender: widget.gender,
+          name: _searchController.text.isEmpty ? null : _searchController.text,
         ));
       },
       child: ListView.builder(
         controller: _scrollController,
         itemCount:
-            hasHeaderItem + state.characters.length + (state.hasMore ? 1 : 0),
+            specialItems + state.characters.length + (state.hasMore ? 1 : 0),
         itemBuilder: (context, index) {
           if (_hasFilter && index == 0) {
             return _buildFilterHeader(context, state.totalCount, l10n);
           }
-          final adjustedIndex = index - hasHeaderItem;
+          final searchIndex = _hasFilter ? 1 : 0;
+          if (index == searchIndex) {
+            return Padding(
+              padding: EdgeInsets.only(bottom: layout.spacing.medium),
+              child: AppInputSearch(
+                controller: _searchController,
+                hintText: l10n.searchCharacters,
+                onSubmitted: _handleSearch,
+                onCleared: () => _handleSearch(''),
+              ),
+            );
+          }
+          final emptyIndex = searchIndex + 1;
+          if (hasEmptyResults && index == emptyIndex) {
+            return _buildEmptyResults(context, l10n);
+          }
+          final adjustedIndex = index - specialItems;
           if (adjustedIndex >= state.characters.length) {
             return _buildLoadingMore(context);
           }
@@ -143,6 +185,43 @@ class _CharactersPageState extends State<CharactersPage> {
             child: _buildCharacterCard(context, character),
           );
         },
+      ),
+    );
+  }
+
+  void _handleSearch(String query) {
+    _viewModel.loadCharactersCommand.execute((
+      forceRefresh: true,
+      species: widget.species,
+      type: widget.type,
+      gender: widget.gender,
+      name: query.isEmpty ? null : query,
+    ));
+  }
+
+  Widget _buildEmptyResults(BuildContext context, AppLocalizations l10n) {
+    final theme = Theme.of(context);
+    final layout = theme.layout;
+    return Padding(
+      padding: EdgeInsets.symmetric(vertical: layout.padding.large),
+      child: Center(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            Icon(
+              Icons.search_off,
+              size: layout.icon.xlarge,
+              color: theme.colorScheme.onSurfaceVariant,
+            ),
+            SizedBox(height: layout.spacing.medium),
+            Text(
+              l10n.noResults,
+              style: theme.textTheme.bodyLarge?.copyWith(
+                color: theme.colorScheme.onSurfaceVariant,
+              ),
+            ),
+          ],
+        ),
       ),
     );
   }
@@ -228,6 +307,9 @@ class _CharactersPageState extends State<CharactersPage> {
                 species: widget.species,
                 type: widget.type,
                 gender: widget.gender,
+                name: _searchController.text.isEmpty
+                    ? null
+                    : _searchController.text,
               )),
               icon: const Icon(Icons.refresh),
               label: Text(l10n.retry),

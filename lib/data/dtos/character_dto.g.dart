@@ -62,7 +62,9 @@ Map<String, dynamic> _$CharacterLocationDtoToJson(
 CharacterListResponseDto _$CharacterListResponseDtoFromJson(
   Map<String, dynamic> json,
 ) => CharacterListResponseDto(
-  info: PaginationInfoDto.fromJson(json['info'] as Map<String, dynamic>),
+  info: json['info'] == null
+      ? null
+      : PaginationInfoDto.fromJson(json['info'] as Map<String, dynamic>),
   results: (json['results'] as List<dynamic>)
       .map((e) => CharacterDto.fromJson(e as Map<String, dynamic>))
       .toList(),

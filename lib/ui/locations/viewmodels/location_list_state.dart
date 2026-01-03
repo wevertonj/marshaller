@@ -20,6 +20,7 @@ final class LocationListLoaded extends LocationListState {
   final int totalCount;
   final String? type;
   final String? dimension;
+  final String? name;
   const LocationListLoaded({
     required this.locations,
     required this.hasMore,
@@ -28,6 +29,7 @@ final class LocationListLoaded extends LocationListState {
     this.totalCount = 0,
     this.type,
     this.dimension,
+    this.name,
   });
   LocationListLoaded copyWith({
     List<Location>? locations,
@@ -37,6 +39,7 @@ final class LocationListLoaded extends LocationListState {
     int? totalCount,
     String? type,
     String? dimension,
+    String? name,
   }) {
     return LocationListLoaded(
       locations: locations ?? this.locations,
@@ -46,6 +49,7 @@ final class LocationListLoaded extends LocationListState {
       totalCount: totalCount ?? this.totalCount,
       type: type ?? this.type,
       dimension: dimension ?? this.dimension,
+      name: name ?? this.name,
     );
   }
 }

@@ -21,6 +21,7 @@ final class CharacterListLoaded extends CharacterListState {
   final String? species;
   final String? type;
   final String? gender;
+  final String? name;
   const CharacterListLoaded({
     required this.characters,
     required this.hasMore,
@@ -30,6 +31,7 @@ final class CharacterListLoaded extends CharacterListState {
     this.species,
     this.type,
     this.gender,
+    this.name,
   });
   CharacterListLoaded copyWith({
     List<Character>? characters,
@@ -40,6 +42,7 @@ final class CharacterListLoaded extends CharacterListState {
     String? species,
     String? type,
     String? gender,
+    String? name,
   }) {
     return CharacterListLoaded(
       characters: characters ?? this.characters,
@@ -50,6 +53,7 @@ final class CharacterListLoaded extends CharacterListState {
       species: species ?? this.species,
       type: type ?? this.type,
       gender: gender ?? this.gender,
+      name: name ?? this.name,
     );
   }
 }

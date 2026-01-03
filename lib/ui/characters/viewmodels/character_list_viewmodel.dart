@@ -12,23 +12,38 @@ class CharacterListViewModel extends ChangeNotifier {
   late final loadCharactersCommand =
       Command1<
         Unit,
-        ({bool forceRefresh, String? species, String? type, String? gender})
+        ({
+          bool forceRefresh,
+          String? species,
+          String? type,
+          String? gender,
+          String? name,
+        })
       >(_loadCharacters);
   late final loadMoreCommand = Command0(_loadMore);
 
   AsyncResult<Unit> _loadCharacters(
-    ({bool forceRefresh, String? species, String? type, String? gender}) params,
+    ({
+      bool forceRefresh,
+      String? species,
+      String? type,
+      String? gender,
+      String? name,
+    })
+    params,
   ) async {
     final forceRefresh = params.forceRefresh;
     final species = params.species;
     final type = params.type;
     final gender = params.gender;
+    final name = params.name;
     state.value = const CharacterListLoading();
     final result = await _repository.getCharacters(
       page: 1,
       species: species,
       type: type,
       gender: gender,
+      name: name,
       forceRefresh: forceRefresh,
     );
     result.fold(
@@ -40,6 +55,7 @@ class CharacterListViewModel extends ChangeNotifier {
         species: species,
         type: type,
         gender: gender,
+        name: name,
       ),
       (error) => state.value = CharacterListError(error.toString()),
     );
@@ -58,6 +74,7 @@ class CharacterListViewModel extends ChangeNotifier {
       species: currentState.species,
       type: currentState.type,
       gender: currentState.gender,
+      name: currentState.name,
     );
     result.fold(
       (paginatedResult) => state.value = currentState.copyWith(

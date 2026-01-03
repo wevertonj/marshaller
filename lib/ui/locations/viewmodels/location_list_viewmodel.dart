@@ -10,22 +10,25 @@ class LocationListViewModel extends ChangeNotifier {
     : _repository = repository;
   final state = ValueNotifier<LocationListState>(const LocationListInitial());
   late final loadLocationsCommand =
-      Command1<Unit, ({bool forceRefresh, String? type, String? dimension})>(
-        _loadLocations,
-      );
+      Command1<
+        Unit,
+        ({bool forceRefresh, String? type, String? dimension, String? name})
+      >(_loadLocations);
   late final loadMoreCommand = Command0(_loadMore);
 
   AsyncResult<Unit> _loadLocations(
-    ({bool forceRefresh, String? type, String? dimension}) params,
+    ({bool forceRefresh, String? type, String? dimension, String? name}) params,
   ) async {
     final forceRefresh = params.forceRefresh;
     final type = params.type;
     final dimension = params.dimension;
+    final name = params.name;
     state.value = const LocationListLoading();
     final result = await _repository.getLocations(
       page: 1,
       type: type,
       dimension: dimension,
+      name: name,
       forceRefresh: forceRefresh,
     );
     result.fold(
@@ -36,6 +39,7 @@ class LocationListViewModel extends ChangeNotifier {
         totalCount: paginatedResult.totalCount,
         type: type,
         dimension: dimension,
+        name: name,
       ),
       (error) => state.value = LocationListError(error.toString()),
     );
@@ -53,6 +57,7 @@ class LocationListViewModel extends ChangeNotifier {
       page: nextPage,
       type: currentState.type,
       dimension: currentState.dimension,
+      name: currentState.name,
     );
     result.fold(
       (paginatedResult) => state.value = currentState.copyWith(

@@ -17,23 +17,27 @@ final class EpisodeListLoaded extends EpisodeListState {
   final bool hasMore;
   final bool isLoadingMore;
   final int currentPage;
+  final String? name;
   const EpisodeListLoaded({
     required this.episodes,
     required this.hasMore,
     this.isLoadingMore = false,
     required this.currentPage,
+    this.name,
   });
   EpisodeListLoaded copyWith({
     List<Episode>? episodes,
     bool? hasMore,
     bool? isLoadingMore,
     int? currentPage,
+    String? name,
   }) {
     return EpisodeListLoaded(
       episodes: episodes ?? this.episodes,
       hasMore: hasMore ?? this.hasMore,
       isLoadingMore: isLoadingMore ?? this.isLoadingMore,
       currentPage: currentPage ?? this.currentPage,
+      name: name ?? this.name,
     );
   }
 }

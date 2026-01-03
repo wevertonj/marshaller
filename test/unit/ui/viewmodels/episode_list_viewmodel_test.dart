@@ -48,7 +48,10 @@ void main() {
             () => mockRepository.getEpisodes(page: 1),
           ).thenAnswer((_) async => Success(paginatedResult));
 
-          await viewModel.loadEpisodesCommand.execute(false);
+          await viewModel.loadEpisodesCommand.execute((
+            forceRefresh: false,
+            name: null,
+          ));
 
           expect(states.length, 2);
           expect(states[0], isA<EpisodeListLoading>());
@@ -75,7 +78,10 @@ void main() {
             () => mockRepository.getEpisodes(page: 1),
           ).thenAnswer((_) async => Failure(Exception('Network error')));
 
-          await viewModel.loadEpisodesCommand.execute(false);
+          await viewModel.loadEpisodesCommand.execute((
+            forceRefresh: false,
+            name: null,
+          ));
 
           expect(states.length, 2);
           expect(states[0], isA<EpisodeListLoading>());
@@ -101,7 +107,10 @@ void main() {
           () => mockRepository.getEpisodes(page: 1),
         ).thenAnswer((_) async => Success(firstPageResult));
 
-        await viewModel.loadEpisodesCommand.execute(false);
+        await viewModel.loadEpisodesCommand.execute((
+          forceRefresh: false,
+          name: null,
+        ));
 
         final secondPageResult = PaginatedResult(
           items: [EpisodeFixtures.testEpisode2],
@@ -138,7 +147,10 @@ void main() {
           () => mockRepository.getEpisodes(page: 1),
         ).thenAnswer((_) async => Success(paginatedResult));
 
-        await viewModel.loadEpisodesCommand.execute(false);
+        await viewModel.loadEpisodesCommand.execute((
+          forceRefresh: false,
+          name: null,
+        ));
 
         await viewModel.loadMoreCommand.execute();
 

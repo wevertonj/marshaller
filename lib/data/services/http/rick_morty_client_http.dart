@@ -113,20 +113,28 @@ class RickMortyClientHttp {
     int page = 1,
     String? name,
     String? episode,
-  }) {
+  }) async {
     final queryParams = _buildQueryParams(
       page: page,
       filters: {'name': name, 'episode': episode},
     );
-    return _get(RickMortyEndpoints.episodes, queryParameters: queryParams).map((
-      response,
-    ) {
-      final dto = EpisodeListResponseDto.fromJson(response.data);
-      return _toPaginatedResult(
-        dto.info,
-        dto.results.map((e) => e.toEntity()).toList(),
-      );
-    });
+    final response = await _get(
+      RickMortyEndpoints.episodes,
+      queryParameters: queryParams,
+    );
+    return response.fold((data) {
+      try {
+        final dto = EpisodeListResponseDto.fromJson(data.data);
+        return Success(
+          _toPaginatedResult(
+            dto.info,
+            dto.results.map((e) => e.toEntity()).toList(),
+          ),
+        );
+      } catch (e) {
+        return Failure(UnknownHttpException('Parsing error: $e'));
+      }
+    }, (error) => Failure(error));
   }
 
   AsyncResult<Episode> getEpisode(int id) {
@@ -164,6 +172,8 @@ class RickMortyClientHttp {
         );
       }
       return Failure(_handleError(e));
+    } catch (e) {
+      return Failure(UnknownHttpException('Unexpected error: $e'));
     }
   }
 

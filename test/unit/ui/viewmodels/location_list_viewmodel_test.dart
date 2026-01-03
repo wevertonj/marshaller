@@ -52,6 +52,7 @@ void main() {
             forceRefresh: false,
             type: null,
             dimension: null,
+            name: null,
           ));
 
           expect(states.length, 2);
@@ -83,6 +84,7 @@ void main() {
             forceRefresh: false,
             type: null,
             dimension: null,
+            name: null,
           ));
 
           expect(states.length, 2);
@@ -113,6 +115,7 @@ void main() {
           forceRefresh: false,
           type: null,
           dimension: null,
+          name: null,
         ));
 
         final secondPageResult = PaginatedResult(
@@ -154,6 +157,7 @@ void main() {
           forceRefresh: false,
           type: null,
           dimension: null,
+          name: null,
         ));
 
         await viewModel.loadMoreCommand.execute();

@@ -50,9 +50,9 @@ class LocationDto {
 
 @JsonSerializable()
 class LocationListResponseDto {
-  final PaginationInfoDto info;
+  final PaginationInfoDto? info;
   final List<LocationDto> results;
-  const LocationListResponseDto({required this.info, required this.results});
+  const LocationListResponseDto({this.info, required this.results});
   factory LocationListResponseDto.fromJson(Map<String, dynamic> json) =>
       _$LocationListResponseDtoFromJson(json);
   Map<String, dynamic> toJson() => _$LocationListResponseDtoToJson(this);

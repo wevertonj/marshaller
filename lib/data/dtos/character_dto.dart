@@ -103,9 +103,9 @@ class CharacterLocationDto {
 
 @JsonSerializable()
 class CharacterListResponseDto {
-  final PaginationInfoDto info;
+  final PaginationInfoDto? info;
   final List<CharacterDto> results;
-  const CharacterListResponseDto({required this.info, required this.results});
+  const CharacterListResponseDto({this.info, required this.results});
   factory CharacterListResponseDto.fromJson(Map<String, dynamic> json) =>
       _$CharacterListResponseDtoFromJson(json);
   Map<String, dynamic> toJson() => _$CharacterListResponseDtoToJson(this);

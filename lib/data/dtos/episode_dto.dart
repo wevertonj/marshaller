@@ -63,9 +63,9 @@ class EpisodeDto {
 
 @JsonSerializable()
 class EpisodeListResponseDto {
-  final PaginationInfoDto info;
+  final PaginationInfoDto? info;
   final List<EpisodeDto> results;
-  const EpisodeListResponseDto({required this.info, required this.results});
+  const EpisodeListResponseDto({this.info, required this.results});
   factory EpisodeListResponseDto.fromJson(Map<String, dynamic> json) =>
       _$EpisodeListResponseDtoFromJson(json);
   Map<String, dynamic> toJson() => _$EpisodeListResponseDtoToJson(this);

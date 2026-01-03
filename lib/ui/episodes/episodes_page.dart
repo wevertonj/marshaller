@@ -11,6 +11,7 @@ import 'package:marshaller/ui/episodes/viewmodels/episode_list_state.dart';
 import 'package:marshaller/ui/episodes/viewmodels/episode_list_viewmodel.dart';
 import 'package:marshaller/utils/helpers/app_navigation.dart';
 import 'package:marshaller/utils/l10n/generated/app_localizations.dart';
+import 'package:marshaller/ui/core/widgets/inputs/app_input_search.dart';
 
 class EpisodesPage extends StatefulWidget {
   const EpisodesPage({super.key});
@@ -21,17 +22,20 @@ class EpisodesPage extends StatefulWidget {
 class _EpisodesPageState extends State<EpisodesPage> {
   late final EpisodeListViewModel _viewModel;
   final ScrollController _scrollController = ScrollController();
+  final TextEditingController _searchController = TextEditingController();
+
   @override
   void initState() {
     super.initState();
     _viewModel = GetIt.I<EpisodeListViewModel>();
-    _viewModel.loadEpisodesCommand.execute(false);
+    _viewModel.loadEpisodesCommand.execute((forceRefresh: false, name: null));
     _scrollController.addListener(_onScroll);
   }
 
   @override
   void dispose() {
     _scrollController.dispose();
+    _searchController.dispose();
     _viewModel.dispose();
     super.dispose();
   }
@@ -64,9 +68,26 @@ class _EpisodesPageState extends State<EpisodesPage> {
   }
 
   Widget _buildShimmerList(BuildContext context) {
+    final layout = Theme.of(context).layout;
     return ListView.builder(
-      itemCount: 10,
-      itemBuilder: (context, index) => _buildShimmerCard(context),
+      itemCount: 11,
+      itemBuilder: (context, index) {
+        if (index == 0) {
+          return Padding(
+            padding: EdgeInsets.only(bottom: layout.spacing.medium),
+            child: AppShimmer(
+              child: Container(
+                height: 56,
+                decoration: BoxDecoration(
+                  color: Colors.white,
+                  borderRadius: BorderRadius.circular(layout.radius.small),
+                ),
+              ),
+            ),
+          );
+        }
+        return _buildShimmerCard(context);
+      },
     );
   }
 
@@ -88,23 +109,80 @@ class _EpisodesPageState extends State<EpisodesPage> {
 
   Widget _buildEpisodeList(BuildContext context, EpisodeListLoaded state) {
     final layout = Theme.of(context).layout;
+    final l10n = AppLocalizations.of(context);
+    final hasEmptyResults = state.episodes.isEmpty;
+    final hasEmptyItem = hasEmptyResults ? 1 : 0;
+
     return RefreshIndicator(
       onRefresh: () async {
-        await _viewModel.loadEpisodesCommand.execute(true);
+        await _viewModel.loadEpisodesCommand.execute((
+          forceRefresh: true,
+          name: _searchController.text.isEmpty ? null : _searchController.text,
+        ));
       },
       child: ListView.builder(
         controller: _scrollController,
-        itemCount: state.episodes.length + (state.hasMore ? 1 : 0),
+        itemCount:
+            1 + hasEmptyItem + state.episodes.length + (state.hasMore ? 1 : 0),
         itemBuilder: (context, index) {
-          if (index >= state.episodes.length) {
+          if (index == 0) {
+            return Padding(
+              padding: EdgeInsets.only(bottom: layout.spacing.medium),
+              child: AppInputSearch(
+                controller: _searchController,
+                hintText: l10n.searchEpisodes,
+                onSubmitted: _handleSearch,
+                onCleared: () => _handleSearch(''),
+              ),
+            );
+          }
+          if (hasEmptyResults && index == 1) {
+            return _buildEmptyResults(context, l10n);
+          }
+          final adjustedIndex = index - 1 - hasEmptyItem;
+          if (adjustedIndex >= state.episodes.length) {
             return _buildLoadingMore(context);
           }
-          final episode = state.episodes[index];
+          final episode = state.episodes[adjustedIndex];
           return Padding(
             padding: EdgeInsets.only(bottom: layout.spacing.medium),
             child: _buildEpisodeCard(context, episode),
           );
         },
+      ),
+    );
+  }
+
+  void _handleSearch(String query) {
+    _viewModel.loadEpisodesCommand.execute((
+      forceRefresh: true,
+      name: query.isEmpty ? null : query,
+    ));
+  }
+
+  Widget _buildEmptyResults(BuildContext context, AppLocalizations l10n) {
+    final theme = Theme.of(context);
+    final layout = theme.layout;
+    return Padding(
+      padding: EdgeInsets.symmetric(vertical: layout.padding.large),
+      child: Center(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            Icon(
+              Icons.search_off,
+              size: layout.icon.xlarge,
+              color: theme.colorScheme.onSurfaceVariant,
+            ),
+            SizedBox(height: layout.spacing.medium),
+            Text(
+              l10n.noResults,
+              style: theme.textTheme.bodyLarge?.copyWith(
+                color: theme.colorScheme.onSurfaceVariant,
+              ),
+            ),
+          ],
+        ),
       ),
     );
   }
@@ -199,7 +277,12 @@ class _EpisodesPageState extends State<EpisodesPage> {
             ),
             SizedBox(height: layout.spacing.large),
             FilledButton.icon(
-              onPressed: () => _viewModel.loadEpisodesCommand.execute(false),
+              onPressed: () => _viewModel.loadEpisodesCommand.execute((
+                forceRefresh: true,
+                name: _searchController.text.isEmpty
+                    ? null
+                    : _searchController.text,
+              )),
               icon: const Icon(Icons.refresh),
               label: Text(l10n.retry),
             ),
