@@ -5,6 +5,10 @@
 
 Projeto pessoal criado para implementar uma interface clean e elegante para um boilerplate interno, seguindo as [recomendações oficiais do Flutter](https://docs.flutter.dev/app-architecture/recommendations) para arquitetura de aplicativos.
 
+## 🧪 The Rick and Morty API
+
+Este projeto utiliza a [The Rick and Morty API](https://rickandmortyapi.com/) criada por [Axel Fuhrmann](https://github.com/afuh).
+
 ## ✨ Características
 
 - 🏗️ **Clean Architecture** - Separação clara entre UI, Data e Domain
