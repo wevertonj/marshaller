@@ -1,7 +1,7 @@
 name: marshaller
-description: "Marshaller - App Flutter seguindo a arquitetura recomendada pelo Flutter."
+description: "Projeto pessoal criado para implementar uma interface clean e elegante para um boilerplate interno"
 publish_to: "none"
-version: 0.1.0
+version: 1.0.0+1
 
 environment:
   sdk: ^3.8.0
