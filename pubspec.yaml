@@ -1,0 +1,83 @@
+name: marshaller
+description: "Marshaller - App Flutter seguindo a arquitetura recomendada pelo Flutter."
+publish_to: "none"
+version: 0.1.0
+
+environment:
+  sdk: ^3.8.0
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+  intl: any
+
+  # State Management & DI
+  get_it: ^9.2.0
+  result_dart: ^2.1.1
+  result_command: ^2.2.0
+
+  # Navigation
+  go_router: ^17.0.1
+
+  # HTTP & Serialization
+  dio:
+  json_annotation: ^4.9.0
+  equatable: ^2.0.7
+
+  # Storage
+  shared_preferences: ^2.5.4
+  flutter_secure_storage: ^10.0.0
+  encrypt: ^5.0.3
+  sqflite: ^2.4.2
+  path: ^1.9.1
+
+  # Firebase & Notifications
+  firebase_core: ^4.3.0
+  firebase_crashlytics: ^5.0.6
+  firebase_messaging: ^16.1.0
+  flutter_local_notifications: ^19.5.0
+
+  # Validation & Formatting
+  lucid_validation: ^1.3.1
+  brasil_fields: ^1.18.0
+
+  # Security
+  local_auth: ^3.0.0
+
+  # Deep Links & Utilities
+  app_links: ^7.0.0
+  share_plus: ^12.0.1
+  path_provider: ^2.1.5
+  device_info_plus: ^12.3.0
+
+  # UI
+  shimmer: ^3.0.0
+  pointycastle: ^3.9.1
+  package_info_plus: ^9.0.0
+  local_auth_android: ^2.0.4
+  local_auth_darwin: ^2.0.1
+  crypto: ^3.0.7
+  uuid: ^4.5.2
+  lottie: ^3.3.2
+  visibility_detector: ^0.4.0+2
+  cached_network_image: ^3.4.1
+  url_launcher: ^6.3.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+  json_serializable: ^6.11.3
+  mocktail: ^1.0.4
+  build_runner: ^2.10.4
+  sqflite_common_ffi: ^2.3.5
+
+flutter:
+  generate: true
+  uses-material-design: true
+
+  assets:
+    - assets/animations/
+    - assets/images/

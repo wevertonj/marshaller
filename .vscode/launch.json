@@ -1,0 +1,9 @@
+{
+  "configurations": [{
+      "name": "Launch Dev",
+      "request": "launch",
+      "type": "dart",
+      "program": "lib/main.dart",
+    }
+  ]
+}

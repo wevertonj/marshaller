@@ -1,0 +1,1733 @@
+{
+  "@@locale": "en",
+
+  "appTitle": "Marshaller",
+  "@appTitle": {
+    "description": "Application title"
+  },
+
+  "itemCount": "{count, plural, =0{No items} =1{1 item} other{{count} items}}",
+  "@itemCount": {
+    "description": "Item count with pluralization",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+
+  "errorGeneric": "An error occurred. Please try again.",
+  "@errorGeneric": {
+    "description": "Generic error message"
+  },
+
+  "errorNetwork": "No internet connection",
+  "@errorNetwork": {
+    "description": "Network error message"
+  },
+
+  "errorUnauthorized": "Session expired. Please sign in again.",
+  "@errorUnauthorized": {
+    "description": "Unauthorized error message"
+  },
+
+  "errorTimeout": "Connection timed out",
+  "@errorTimeout": {
+    "description": "Timeout error message"
+  },
+
+  "cancel": "Cancel",
+  "@cancel": {
+    "description": "Cancel button text"
+  },
+
+  "confirm": "Confirm",
+  "@confirm": {
+    "description": "Confirm button text"
+  },
+
+  "save": "Save",
+  "@save": {
+    "description": "Save button text"
+  },
+
+  "delete": "Delete",
+  "@delete": {
+    "description": "Delete button text"
+  },
+
+  "edit": "Edit",
+  "@edit": {
+    "description": "Edit button text"
+  },
+
+  "loading": "Loading...",
+  "@loading": {
+    "description": "Loading state text"
+  },
+
+  "retry": "Try Again",
+  "@retry": {
+    "description": "Retry button text"
+  },
+
+  "close": "Close",
+  "@close": {
+    "description": "Close button text"
+  },
+
+  "continue_": "Continue",
+  "@continue_": {
+    "description": "Continue button text"
+  },
+
+  "back": "Back",
+  "@back": {
+    "description": "Back button text"
+  },
+
+  "ok": "OK",
+  "@ok": {
+    "description": "OK button text"
+  },
+
+  "error": "Error",
+  "@error": {
+    "description": "Error title"
+  },
+
+  "info": "Information",
+  "@info": {
+    "description": "Information title"
+  },
+
+  "yes": "Yes",
+  "@yes": {
+    "description": "Yes button text"
+  },
+
+  "no": "No",
+  "@no": {
+    "description": "No button text"
+  },
+
+  "home": "Home",
+  "@home": {
+    "description": "Home navigation label"
+  },
+
+  "settings": "Settings",
+  "@settings": {
+    "description": "Settings navigation label"
+  },"goodMorning": "Good morning",
+  "@goodMorning": {
+    "description": "Morning greeting"
+  },
+
+  "goodAfternoon": "Good afternoon",
+  "@goodAfternoon": {
+    "description": "Afternoon greeting"
+  },
+
+  "goodEvening": "Good evening",
+  "@goodEvening": {
+    "description": "Evening greeting"
+  },
+
+  "goodNight": "Good night",
+  "@goodNight": {
+    "description": "Night greeting"
+  },
+
+  "darkMode": "Dark Mode",
+  "@darkMode": {
+    "description": "Dark mode setting label"
+  },
+
+  "lightMode": "Light Mode",
+  "@lightMode": {
+    "description": "Light mode setting label"
+  },
+
+  "systemMode": "System",
+  "@systemMode": {
+    "description": "System theme mode label"
+  },"keyNotFound": "Translation key not found",
+  "@keyNotFound": {
+    "description": "Error when translation key doesn't exist"
+  },"storageError": "Error accessing secure storage",
+  "@storageError": {
+    "description": "Storage error message"
+  },
+
+  "deviceInfoError": "Error getting device information",
+  "@deviceInfoError": {
+    "description": "Device info error message"
+  },"preferences": "Preferences",
+  "@preferences": {
+    "description": "Preferences section title"
+  },
+
+  "language": "Language",
+  "@language": {
+    "description": "Language setting label"
+  },
+
+  "theme": "Theme",
+  "@theme": {
+    "description": "Theme setting label"
+  },
+
+  "about": "About",
+  "@about": {
+    "description": "About section title"
+  },
+
+  "version": "Version",
+  "@version": {
+    "description": "App version label"
+  },
+
+  "privacyPolicy": "Privacy Policy",
+  "@privacyPolicy": {
+    "description": "Privacy policy link text"
+  },
+
+  "termsOfService": "Terms of Service",
+  "@termsOfService": {
+    "description": "Terms of service link text"
+  },
+
+  "openSourceLicenses": "Open Source Licenses",
+  "@openSourceLicenses": {
+    "description": "Open source licenses link text"
+  },
+
+  "system": "System",
+  "@system": {
+    "description": "System option"
+  },
+
+  "light": "Light",
+  "@light": {
+    "description": "Light theme option"
+  },
+
+  "dark": "Dark",
+  "@dark": {
+    "description": "Dark theme option"
+  },
+
+  "creditsDescription": "This app uses data from the Rick and Morty public API.",
+  "@creditsDescription": {
+    "description": "Credits description"
+  },
+
+  "creditsDevelopedBy": "Developed by ",
+  "@creditsDevelopedBy": {
+    "description": "Prefix for developer credit"
+  },
+
+  "creditsUsingDataFrom": " using data from ",
+  "@creditsUsingDataFrom": {
+    "description": "Connector for API credit"
+  },
+
+  "creditsApiSource": "API: rickandmortyapi.com",
+  "@creditsApiSource": {
+    "description": "API source"
+  },
+
+  "creditsImagesSource": "Images: Adult Swim",
+  "@creditsImagesSource": {
+    "description": "Images source"
+  },
+
+  "lottieFilesSource": "Animations: LottieFiles",
+  "@lottieFilesSource": {
+    "description": "Animations source"
+  },
+
+  "colorGreen": "Green",
+  "@colorGreen": {
+    "description": "Green color"
+  },
+
+  "colorBlue": "Blue",
+  "@colorBlue": {
+    "description": "Blue color"
+  },
+
+  "colorPurple": "Purple",
+  "@colorPurple": {
+    "description": "Purple color"
+  },
+
+  "colorOrange": "Orange",
+  "@colorOrange": {
+    "description": "Orange color"
+  },
+
+  "colorRed": "Red",
+  "@colorRed": {
+    "description": "Red color"
+  },
+
+  "colorTeal": "Teal",
+  "@colorTeal": {
+    "description": "Teal color"
+  },
+
+  "colorPink": "Pink",
+  "@colorPink": {
+    "description": "Pink color"
+  },
+
+  "themeColor": "Theme Color",
+  "@themeColor": {
+    "description": "Theme color option"
+  },
+
+  "themeSelect": "Select a theme",
+  "@themeSelect": {
+    "description": "Theme selection instruction"
+  },
+
+  "characters": "Characters",
+  "@characters": {
+    "description": "Characters section title"
+  },
+
+  "locations": "Locations",
+  "@locations": {
+    "description": "Locations section title"
+  },
+
+  "episodes": "Episodes",
+  "@episodes": {
+    "description": "Episodes section title"
+  },
+
+  "search": "Search",
+  "@search": {
+    "description": "Search field placeholder"
+  },
+
+  "searchCharacters": "Search characters",
+  "@searchCharacters": {
+    "description": "Characters search placeholder"
+  },
+
+  "searchLocations": "Search locations",
+  "@searchLocations": {
+    "description": "Locations search placeholder"
+  },
+
+  "searchEpisodes": "Search episodes",
+  "@searchEpisodes": {
+    "description": "Episodes search placeholder"
+  },
+
+  "noResults": "No results found",
+  "@noResults": {
+    "description": "Empty search results message"
+  },
+
+  "tryAgain": "Try Again",
+  "@tryAgain": {
+    "description": "Try again button"
+  },
+
+  "filters": "Filters",
+  "@filters": {
+    "description": "Filters title"
+  },
+
+  "clearFilters": "Clear Filters",
+  "@clearFilters": {
+    "description": "Clear filters button text"
+  },
+
+  "applyFilters": "Apply Filters",
+  "@applyFilters": {
+    "description": "Apply filters button text"
+  },
+
+  "status": "Status",
+  "@status": {
+    "description": "Status label"
+  },
+
+  "species": "Species",
+  "@species": {
+    "description": "Character species label"
+  },
+
+  "gender": "Gender",
+  "@gender": {
+    "description": "Character gender label"
+  },
+
+  "type": "Type",
+  "@type": {
+    "description": "Type label"
+  },
+
+  "dimension": "Dimension",
+  "@dimension": {
+    "description": "Dimension label"
+  },
+
+  "origin": "Origin",
+  "@origin": {
+    "description": "Character origin label"
+  },
+
+  "location": "Location",
+  "@location": {
+    "description": "Location label"
+  },
+
+  "episode": "Episode",
+  "@episode": {
+    "description": "Episode label"
+  },
+
+  "character": "Character",
+  "@character": {
+    "description": "Single character label"
+  },
+
+  "statusAlive": "Alive",
+  "@statusAlive": {
+    "description": "Status alive"
+  },
+
+  "statusDead": "Dead",
+  "@statusDead": {
+    "description": "Status dead"
+  },
+
+  "statusUnknown": "Unknown",
+  "@statusUnknown": {
+    "description": "Status unknown"
+  },
+
+  "genderMale": "Male",
+  "@genderMale": {
+    "description": "Gender male"
+  },
+
+  "genderFemale": "Female",
+  "@genderFemale": {
+    "description": "Gender female"
+  },
+
+  "genderGenderless": "Genderless",
+  "@genderGenderless": {
+    "description": "Gender genderless"
+  },
+
+  "genderUnknown": "Unknown",
+  "@genderUnknown": {
+    "description": "Gender unknown"
+  },
+
+  "speciesHuman": "Human",
+  "@speciesHuman": {
+    "description": "Human species"
+  },
+
+  "speciesAlien": "Alien",
+  "@speciesAlien": {
+    "description": "Alien species"
+  },
+
+  "speciesHumanoid": "Humanoid",
+  "@speciesHumanoid": {
+    "description": "Humanoid species"
+  },
+
+  "speciesPoopybutthole": "Poopybutthole",
+  "@speciesPoopybutthole": {
+    "description": "Poopybutthole species"
+  },
+
+  "speciesMythologicalCreature": "Mythological Creature",
+  "@speciesMythologicalCreature": {
+    "description": "Mythological creature species"
+  },
+
+  "speciesAnimal": "Animal",
+  "@speciesAnimal": {
+    "description": "Animal species"
+  },
+
+  "speciesRobot": "Robot",
+  "@speciesRobot": {
+    "description": "Robot species"
+  },
+
+  "speciesCronenberg": "Cronenberg",
+  "@speciesCronenberg": {
+    "description": "Cronenberg species"
+  },
+
+  "speciesDisease": "Disease",
+  "@speciesDisease": {
+    "description": "Disease species"
+  },
+
+  "speciesUnknown": "Unknown",
+  "@speciesUnknown": {
+    "description": "Unknown species"
+  },
+
+  "locationTypePlanet": "Planet",
+  "@locationTypePlanet": {
+    "description": "Location type planet"
+  },
+
+  "locationTypeCluster": "Cluster",
+  "@locationTypeCluster": {
+    "description": "Location type cluster"
+  },
+
+  "locationTypeSpaceStation": "Space Station",
+  "@locationTypeSpaceStation": {
+    "description": "Location type space station"
+  },
+
+  "locationTypeMicroverse": "Microverse",
+  "@locationTypeMicroverse": {
+    "description": "Location type microverse"
+  },
+
+  "locationTypeTv": "TV",
+  "@locationTypeTv": {
+    "description": "Location type TV"
+  },
+
+  "locationTypeResort": "Resort",
+  "@locationTypeResort": {
+    "description": "Location type resort"
+  },
+
+  "locationTypeFantasyTown": "Fantasy Town",
+  "@locationTypeFantasyTown": {
+    "description": "Location type fantasy town"
+  },
+
+  "locationTypeDream": "Dream",
+  "@locationTypeDream": {
+    "description": "Location type dream"
+  },
+
+  "locationTypeDimension": "Dimension",
+  "@locationTypeDimension": {
+    "description": "Location type dimension"
+  },
+
+  "locationTypeUnknown": "Unknown",
+  "@locationTypeUnknown": {
+    "description": "Location type unknown"
+  },
+
+  "locationTypeMenagerie": "Menagerie",
+  "@locationTypeMenagerie": {
+    "description": "Location type menagerie"
+  },
+
+  "locationTypeGame": "Game",
+  "@locationTypeGame": {
+    "description": "Location type game"
+  },
+
+  "locationTypeCustoms": "Customs",
+  "@locationTypeCustoms": {
+    "description": "Location type customs"
+  },
+
+  "locationTypeDeadworld": "Dead World",
+  "@locationTypeDeadworld": {
+    "description": "Location type dead world"
+  },
+
+  "locationTypeArcade": "Arcade",
+  "@locationTypeArcade": {
+    "description": "Location type arcade"
+  },
+
+  "locationTypeSpacecraft": "Spacecraft",
+  "@locationTypeSpacecraft": {
+    "description": "Location type spacecraft"
+  },
+
+  "locationTypeArtificiallyGenerated": "Artificially Generated World",
+  "@locationTypeArtificiallyGenerated": {
+    "description": "Location type artificially generated world"
+  },
+
+  "locationTypeMachine": "Machine",
+  "@locationTypeMachine": {
+    "description": "Location type machine"
+  },
+
+  "locationTypeAsteriod": "Asteroid",
+  "@locationTypeAsteriod": {
+    "description": "Location type asteroid"
+  },
+
+  "locationTypeBox": "Box",
+  "@locationTypeBox": {
+    "description": "Location type box"
+  },
+
+  "locationTypeElemental": "Elemental",
+  "@locationTypeElemental": {
+    "description": "Location type elemental"
+  },
+
+  "locationTypeMemory": "Memory",
+  "@locationTypeMemory": {
+    "description": "Location type memory"
+  },
+
+  "locationTypeMount": "Mount",
+  "@locationTypeMount": {
+    "description": "Location type mount"
+  },
+
+  "locationTypeNonDiegeticAlternateReality": "Non-Diegetic Alternate Reality",
+  "@locationTypeNonDiegeticAlternateReality": {
+    "description": "Location type non-diegetic alternate reality"
+  },
+
+  "locationTypePoliceStation": "Police Station",
+  "@locationTypePoliceStation": {
+    "description": "Location type police station"
+  },
+
+  "locationTypeQuadrant": "Quadrant",
+  "@locationTypeQuadrant": {
+    "description": "Location type quadrant"
+  },
+
+  "locationTypeReality": "Reality",
+  "@locationTypeReality": {
+    "description": "Location type reality"
+  },
+
+  "locationTypeTeenyverse": "Teenyverse",
+  "@locationTypeTeenyverse": {
+    "description": "Location type teenyverse"
+  },
+
+  "characterTypeHuman": "Human",
+  "@characterTypeHuman": {
+    "description": "Character type human"
+  },
+
+  "characterTypeRobot": "Robot",
+  "@characterTypeRobot": {
+    "description": "Character type robot"
+  },
+
+  "characterTypeAlien": "Alien",
+  "@characterTypeAlien": {
+    "description": "Character type alien"
+  },
+
+  "characterTypeHumanoid": "Humanoid",
+  "@characterTypeHumanoid": {
+    "description": "Character type humanoid"
+  },
+
+  "characterTypeUnknown": "Unknown",
+  "@characterTypeUnknown": {
+    "description": "Character type unknown"
+  },
+
+  "characterTypeParasite": "Parasite",
+  "@characterTypeParasite": {
+    "description": "Character type parasite"
+  },
+
+  "characterTypeMytholog": "Mythological",
+  "@characterTypeMytholog": {
+    "description": "Character type mythological"
+  },
+
+  "characterTypeSuperhuman": "Superhuman",
+  "@characterTypeSuperhuman": {
+    "description": "Character type superhuman"
+  },
+
+  "characterTypeAnimal": "Animal",
+  "@characterTypeAnimal": {
+    "description": "Character type animal"
+  },
+
+  "characterTypeDisease": "Disease",
+  "@characterTypeDisease": {
+    "description": "Character type disease"
+  },
+
+  "characterTypeCronenberg": "Cronenberg",
+  "@characterTypeCronenberg": {
+    "description": "Character type Cronenberg"
+  },
+
+  "characterTypeMicroorganism": "Microorganism",
+  "@characterTypeMicroorganism": {
+    "description": "Character type microorganism"
+  },
+
+  "appearsInEpisodes": "{count, plural, =1{Appears in 1 episode} other{Appears in {count} episodes}}",
+  "@appearsInEpisodes": {
+    "description": "Number of episodes character appears in",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+
+  "residentsCount": "{count, plural, =0{No residents} =1{1 resident} other{{count} residents}}",
+  "@residentsCount": {
+    "description": "Number of residents in location",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+
+  "charactersCount": "{count, plural, =0{No characters} =1{1 character} other{{count} characters}}",
+  "@charactersCount": {
+    "description": "Number of characters in episode",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+
+
+
+  "locationsCount": "{count, plural, =0{No locations} =1{1 location} other{{count} locations}}",
+  "@locationsCount": {
+    "description": "Number of locations",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+
+  "episodesCount": "{count, plural, =0{No episodes} =1{1 episode} other{{count} episodes}}",
+  "@episodesCount": {
+    "description": "Number of episodes in season",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+
+  "noEpisodesFound": "No episodes found",
+  "@noEpisodesFound": {
+    "description": "Empty episodes list message"
+  },
+
+  "noResidentsFound": "No residents found",
+  "@noResidentsFound": {
+    "description": "Message when no residents found"
+  },
+
+  "noCharactersFound": "No characters found",
+  "@noCharactersFound": {
+    "description": "Empty characters list message"
+  },
+
+  "airDate": "Air Date",
+  "@airDate": {
+    "description": "Episode air date label"
+  },
+
+  "seasonEpisode": "S{season}E{episode}",
+  "@seasonEpisode": {
+    "description": "Season and episode format",
+    "placeholders": {
+      "season": {
+        "type": "String",
+        "example": "01"
+      },
+      "episode": {
+        "type": "String",
+        "example": "01"
+      }
+    }
+  },
+
+  "unknownLocation": "Unknown Location",
+  "@unknownLocation": {
+    "description": "Unknown location placeholder text"
+  },
+
+  "unknownOrigin": "Unknown Origin",
+  "@unknownOrigin": {
+    "description": "Unknown origin placeholder text"
+  },
+
+  "firstAppearedIn": "First appeared in",
+  "@firstAppearedIn": {
+    "description": "First appearance label"
+  },
+
+  "lastKnownLocation": "Last Known Location",
+  "@lastKnownLocation": {
+    "description": "Last known location label"
+  },
+
+  "details": "Details",
+  "@details": {
+    "description": "Details section title"
+  },
+
+  "share": "Share",
+  "@share": {
+    "description": "Share button"
+  },
+
+  "favorites": "Favorites",
+  "@favorites": {
+    "description": "Favorites title"
+  },
+
+  "addToFavorites": "Add to Favorites",
+  "@addToFavorites": {
+    "description": "Add to favorites button"
+  },
+
+  "removeFromFavorites": "Remove from Favorites",
+  "@removeFromFavorites": {
+    "description": "Remove from favorites button"
+  },
+
+  "noFavoritesYet": "No favorites yet",
+  "@noFavoritesYet": {
+    "description": "Message when there are no favorites"
+  },
+
+  "residents": "Residents",
+  "@residents": {
+    "description": "Residents section label"
+  },
+
+  "appearancesTab": "Appearances",
+  "@appearancesTab": {
+    "description": "Appearances tab"
+  },
+
+  "infoTab": "Info",
+  "@infoTab": {
+    "description": "Information tab"
+  },
+
+  "created": "Created",
+  "@created": {
+    "description": "Creation date label"
+  },
+
+  "all": "All",
+  "@all": {
+    "description": "All filter option"
+  },
+
+  "credits": "Credits",
+  "@credits": {
+    "description": "Credits section title"
+  },
+
+  "security": "Security",
+  "@security": {
+    "description": "Security settings section title"
+  },"logoutConfirmation": "Are you sure you want to sign out?",
+  "@logoutConfirmation": {
+    "description": "Logout confirmation message"
+  },
+
+  "logoutConfirmationMessage": "You will need to sign in again to access the app.",
+  "@logoutConfirmationMessage": {
+    "description": "Detailed logout confirmation message"
+  },"appearance": "Appearance",
+  "@appearance": {
+    "description": "Appearance settings section title"
+  },
+
+  "account": "Account",
+  "@account": {
+    "description": "Account section title"
+  },
+
+  "deleteAccount": "Delete Account",
+  "@deleteAccount": {
+    "description": "Delete account button"
+  },
+
+  "deleteAccountConfirmation": "Are you sure you want to delete your account?",
+  "@deleteAccountConfirmation": {
+    "description": "Delete account confirmation message"
+  },
+
+  "deleteAccountWarning": "This action is irreversible. All your data will be lost.",
+  "@deleteAccountWarning": {
+    "description": "Delete account warning"
+  },
+
+  "charactersNotFoundMessage": "No characters found with the applied filters",
+  "@charactersNotFoundMessage": {
+    "description": "Message when no characters with filters"
+  },
+
+  "locationsNotFoundMessage": "No locations found with the applied filters",
+  "@locationsNotFoundMessage": {
+    "description": "Message when no locations with filters"
+  },
+
+  "episodesNotFoundMessage": "No episodes found with the applied filters",
+  "@episodesNotFoundMessage": {
+    "description": "Message when no episodes with filters"
+  },
+
+  "loadMore": "Load More",
+  "@loadMore": {
+    "description": "Load more button text"
+  },
+
+  "endOfList": "End of list",
+  "@endOfList": {
+    "description": "End of list message"
+  },
+
+  "noMoreItems": "No more items",
+  "@noMoreItems": {
+    "description": "Message when no more items"
+  },
+
+  "swipeToRefresh": "Swipe to refresh",
+  "@swipeToRefresh": {
+    "description": "Refresh instruction"
+  },
+
+  "refresh": "Refresh",
+  "@refresh": {
+    "description": "Refresh button text"
+  },
+
+  "seeAll": "See All",
+  "@seeAll": {
+    "description": "See all link"
+  },
+
+  "seeMore": "See More",
+  "@seeMore": {
+    "description": "See more link"
+  },
+
+  "seeLess": "See Less",
+  "@seeLess": {
+    "description": "See less link"
+  },
+
+  "name": "Name",
+  "@name": {
+    "description": "Name label"
+  },
+
+  "nameRequired": "Name is required",
+  "@nameRequired": {
+    "description": "Name validation message"
+  },
+
+  "confirmPasswordRequired": "Password confirmation is required",
+  "@confirmPasswordRequired": {
+    "description": "Password confirmation validation message"
+  },
+
+  "passwordsDoNotMatch": "Passwords do not match",
+  "@passwordsDoNotMatch": {
+    "description": "Message when passwords don't match"
+  },
+
+  "successfullyRegistered": "Successfully registered!",
+  "@successfullyRegistered": {
+    "description": "Registration success message"
+  },
+
+  "successfullyLoggedIn": "Successfully logged in!",
+  "@successfullyLoggedIn": {
+    "description": "Login success message"
+  },
+
+  "invalidCredentials": "Invalid credentials",
+  "@invalidCredentials": {
+    "description": "Invalid credentials message"
+  },
+
+  "accountCreated": "Account created successfully",
+  "@accountCreated": {
+    "description": "Account created message"
+  },
+
+  "errorCreatingAccount": "Error creating account",
+  "@errorCreatingAccount": {
+    "description": "Error creating account message"
+  },
+
+  "portuguese": "Portuguese",
+  "@portuguese": {
+    "description": "Portuguese language name"
+  },
+
+  "english": "English",
+  "@english": {
+    "description": "English language name"
+  },
+
+  "spanish": "Spanish",
+  "@spanish": {
+    "description": "Spanish language name"
+  },
+
+  "next": "Next",
+  "@next": {
+    "description": "Next button text"
+  },
+
+  "previous": "Previous",
+  "@previous": {
+    "description": "Previous button text"
+  },
+
+  "logoutConfirmTitle": "Sign Out",
+  "@logoutConfirmTitle": {
+    "description": "Logout confirmation dialog title"
+  },
+
+  "logoutConfirmMessage": "Are you sure you want to sign out?",
+  "@logoutConfirmMessage": {
+    "description": "Logout confirmation dialog message"
+  },"enableNotifications": "Enable Notifications",
+  "@enableNotifications": {
+    "description": "Enable notifications toggle label"
+  },
+
+  "noLocationsFound": "No locations found",
+  "@noLocationsFound": {
+    "description": "Empty locations list message"
+  },
+
+  "filterByStatus": "Filter by Status",
+  "@filterByStatus": {
+    "description": "Filter label for status"
+  },
+
+  "filterBySpecies": "Filter by Species",
+  "@filterBySpecies": {
+    "description": "Filter label for species"
+  },
+
+  "filterByGender": "Filter by Gender",
+  "@filterByGender": {
+    "description": "Filter label for gender"
+  },
+
+  "filterByType": "Filter by Type",
+  "@filterByType": {
+    "description": "Filter label for type"
+  },
+
+  "filterByDimension": "Filter by Dimension",
+  "@filterByDimension": {
+    "description": "Filter label for dimension"
+  },
+
+  "information": "Information",
+  "@information": {
+    "description": "Information section title"
+  },
+
+  "contactUs": "Contact Us",
+  "@contactUs": {
+    "description": "Contact us link text"
+  },
+
+  "rateApp": "Rate App",
+  "@rateApp": {
+    "description": "Rate app link text"
+  },
+
+  "shareApp": "Share App",
+  "@shareApp": {
+    "description": "Share app link text"
+  },
+
+  "selectColor": "Select Color",
+  "@selectColor": {
+    "description": "Color picker title"
+  },
+
+  "colorIndigo": "Indigo",
+  "@colorIndigo": {
+    "description": "Indigo color name"
+  },
+
+  "creditsTitle": "Credits",
+  "@creditsTitle": {
+    "description": "Credits screen title"
+  },
+
+  "creditsApiTitle": "Rick and Morty API",
+  "@creditsApiTitle": {
+    "description": "API credits title"
+  },
+
+  "creditsApiDescription": "All data used in this app comes from the Rick and Morty API, a free and open API.",
+  "@creditsApiDescription": {
+    "description": "API credits description"
+  },
+
+  "creditsImagesTitle": "Images and Content",
+  "@creditsImagesTitle": {
+    "description": "Images credits title"
+  },
+
+  "creditsImagesDescription": "All images, character names, locations and episode information are property of their respective owners.",
+  "@creditsImagesDescription": {
+    "description": "Images credits description"
+  },
+
+  "creditsDeveloperTitle": "Development",
+  "@creditsDeveloperTitle": {
+    "description": "Developer credits title"
+  },
+
+  "creditsDeveloperDescription": "App developed with Flutter following best architecture practices.",
+  "@creditsDeveloperDescription": {
+    "description": "Developer credits description"
+  },
+
+  "creditsVisitApi": "Visit API",
+  "@creditsVisitApi": {
+    "description": "Visit API button text"
+  },
+
+  "general": "General",
+  "@general": {
+    "description": "General settings section title"
+  },
+
+  "errorLoadingCharacters": "Error loading characters",
+  "@errorLoadingCharacters": {
+    "description": "Error loading characters message"
+  },
+
+  "errorLoadingLocations": "Error loading locations",
+  "@errorLoadingLocations": {
+    "description": "Error loading locations message"
+  },
+
+  "errorLoadingEpisodes": "Error loading episodes",
+  "@errorLoadingEpisodes": {
+    "description": "Error loading episodes message"
+  },
+
+  "noDescription": "No description available",
+  "@noDescription": {
+    "description": "No description placeholder text"
+  },
+
+  "firstSeenIn": "First Seen In",
+  "@firstSeenIn": {
+    "description": "First seen in episode label"
+  },
+
+  "seasonNumber": "Season {number}",
+  "@seasonNumber": {
+    "description": "Season number with placeholder",
+    "placeholders": {
+      "number": {
+        "type": "int",
+        "example": "1"
+      }
+    }
+  },
+
+  "episodeNumber": "Episode {number}",
+  "@episodeNumber": {
+    "description": "Episode number with placeholder",
+    "placeholders": {
+      "number": {
+        "type": "int",
+        "example": "1"
+      }
+    }
+  },
+
+  "allSeasons": "All Seasons",
+  "@allSeasons": {
+    "description": "All seasons filter option"
+  },
+
+  "season": "Season",
+  "@season": {
+    "description": "Season label"
+  },
+
+  "viewAll": "View All",
+  "@viewAll": {
+    "description": "View all button text"
+  },
+
+  "showMore": "Show More",
+  "@showMore": {
+    "description": "Show more button text"
+  },
+
+  "showLess": "Show Less",
+  "@showLess": {
+    "description": "Show less button text"
+  },
+
+  "episodeCode": "Episode Code",
+  "@episodeCode": {
+    "description": "Episode code label (e.g., S01E01)"
+  },
+
+  "locationTypeTvShow": "TV Show",
+  "@locationTypeTvShow": {
+    "description": "Location type TV show"
+  },
+
+  "locationTypeDaycare": "Daycare",
+  "@locationTypeDaycare": {
+    "description": "Location type daycare"
+  },
+
+  "locationTypeDwarf": "Dwarf Planet",
+  "@locationTypeDwarf": {
+    "description": "Location type dwarf planet"
+  },
+
+  "locationTypeMiniverse": "Miniverse",
+  "@locationTypeMiniverse": {
+    "description": "Location type miniverse"
+  },
+
+  "locationTypeSpa": "Spa",
+  "@locationTypeSpa": {
+    "description": "Location type spa"
+  },
+
+  "locationTypeLiquid": "Liquid",
+  "@locationTypeLiquid": {
+    "description": "Location type liquid"
+  },
+
+  "locationTypeConvention": "Convention",
+  "@locationTypeConvention": {
+    "description": "Location type convention"
+  },
+
+  "locationTypeWoods": "Woods",
+  "@locationTypeWoods": {
+    "description": "Location type woods"
+  },
+
+  "locationTypeDocks": "Docks",
+  "@locationTypeDocks": {
+    "description": "Location type docks"
+  },
+
+  "locationTypeAsteroid": "Asteroid",
+  "@locationTypeAsteroid": {
+    "description": "Location type asteroid"
+  },
+
+  "locationTypePolice": "Police Department",
+  "@locationTypePolice": {
+    "description": "Location type police department"
+  },
+
+  "locationTypeCountry": "Country",
+  "@locationTypeCountry": {
+    "description": "Location type country"
+  },
+
+  "locationTypeContinent": "Continent",
+  "@locationTypeContinent": {
+    "description": "Location type continent"
+  },
+
+  "locationTypeNightclub": "Nightclub",
+  "@locationTypeNightclub": {
+    "description": "Location type nightclub"
+  },
+
+  "locationTypeBase": "Base",
+  "@locationTypeBase": {
+    "description": "Location type base"
+  },
+
+  "locationTypeSpace": "Space",
+  "@locationTypeSpace": {
+    "description": "Location type space"
+  },
+
+  "locationTypeRealityDimension": "Reality/Dimension",
+  "@locationTypeRealityDimension": {
+    "description": "Location type reality/dimension"
+  },
+
+  "characterTypeMythological": "Mythological Creature",
+  "@characterTypeMythological": {
+    "description": "Character species mythological"
+  },
+
+  "characterTypePoopybutthole": "Poopybutthole",
+  "@characterTypePoopybutthole": {
+    "description": "Character species Poopybutthole"
+  },
+
+  "characterTypePlanet": "Planet",
+  "@characterTypePlanet": {
+    "description": "Character species Planet"
+  },
+
+  "invalidName": "Invalid name",
+  "@invalidName": {
+    "description": "Validation message for invalid name"
+  },
+
+  "passwordMinLength": "Password must have at least 8 characters",
+  "@passwordMinLength": {
+    "description": "Validation message for password minimum length"
+  },
+
+  "passwordMustHaveLowercase": "Password must have at least one lowercase letter",
+  "@passwordMustHaveLowercase": {
+    "description": "Validation message for lowercase requirement"
+  },
+
+  "passwordMustHaveUppercase": "Password must have at least one uppercase letter",
+  "@passwordMustHaveUppercase": {
+    "description": "Validation message for uppercase requirement"
+  },
+
+  "passwordMustHaveNumber": "Password must have at least one number",
+  "@passwordMustHaveNumber": {
+    "description": "Validation message for number requirement"
+  },
+
+  "passwordMustHaveSpecialCharacter": "Password must have at least one special character",
+  "@passwordMustHaveSpecialCharacter": {
+    "description": "Validation message for special character requirement"
+  },
+
+  "invalidBirthDate": "Invalid birth date",
+  "@invalidBirthDate": {
+    "description": "Validation message for invalid birth date"
+  },
+
+  "tooOldBirthDate": "Birth date is too old",
+  "@tooOldBirthDate": {
+    "description": "Validation message for birth date too old"
+  },
+
+  "mode": "Mode",
+  "@mode": {
+    "description": "Theme mode setting label"
+  },
+
+  "modeSelect": "Select Mode",
+  "@modeSelect": {
+    "description": "Mode selection dialog title"
+  },
+
+  "systemDefault": "System Default",
+  "@systemDefault": {
+    "description": "System default option for locale"
+  },"allNotifications": "All Notifications",
+  "@allNotifications": {
+    "description": "All notifications toggle title"
+  },
+
+  "allNotificationsDescription": "Enable or disable all notifications",
+  "@allNotificationsDescription": {
+    "description": "All notifications toggle description"
+  },
+
+  "generalNotifications": "General Notifications",
+  "@generalNotifications": {
+    "description": "General notifications toggle title"
+  },
+
+  "generalNotificationsDescription": "Receive general app updates and news",
+  "@generalNotificationsDescription": {
+    "description": "General notifications toggle description"
+  },
+
+  "promotionalNotifications": "Promotional Notifications",
+  "@promotionalNotifications": {
+    "description": "Promotional notifications toggle title"
+  },
+
+  "promotionalNotificationsDescription": "Receive special offers and promotions",
+  "@promotionalNotificationsDescription": {
+    "description": "Promotional notifications toggle description"
+  },
+
+  "errorSaving": "Error saving",
+  "@errorSaving": {
+    "description": "Error saving message prefix"
+  },"lottieSimpleLicense": "Lottie Simple License",
+  "@lottieSimpleLicense": {
+    "description": "Lottie animation license type"
+  },
+
+  "thirdPartyAssets": "Third-Party Assets",
+  "@thirdPartyAssets": {
+    "description": "Third party assets section title"
+  },
+
+  "thirdPartyLibraries": "Third-Party Libraries",
+  "@thirdPartyLibraries": {
+    "description": "Third party libraries section title"
+  },
+
+  "license": "License",
+  "@license": {
+    "description": "License label"
+  },
+
+  "source": "Source",
+  "@source": {
+    "description": "Source label"
+  },
+
+  "exploreRickAndMorty": "Explore the Rick and Morty universe",
+  "@exploreRickAndMorty": {
+    "description": "Home page subtitle"
+  },
+
+  "charactersDescription": "Discover all characters from the show",
+  "@charactersDescription": {
+    "description": "Characters section description"
+  },
+
+  "locationsDescription": "Explore the multiverse locations",
+  "@locationsDescription": {
+    "description": "Locations section description"
+  },
+
+  "episodesDescription": "All episodes from every season",
+  "@episodesDescription": {
+    "description": "Episodes section description"
+  },
+
+  "welcomeDescription": "Explore the Rick and Morty universe and discover all characters, locations, and episodes",
+  "@welcomeDescription": {
+    "description": "Welcome page description"
+  },
+
+  "characterDetails": "Character Details",
+  "@characterDetails": {
+    "description": "Character details page title"
+  },
+
+  "genderless": "Genderless",
+  "@genderless": {
+    "description": "Genderless gender label"
+  },
+
+  "characterTypeGeneticExperiment": "Genetic Experiment",
+  "@characterTypeGeneticExperiment": {
+    "description": "Character type genetic experiment"
+  },
+
+  "characterTypeHumanWithAntennae": "Human with Antennae",
+  "@characterTypeHumanWithAntennae": {
+    "description": "Character type human with antennae"
+  },
+
+  "characterTypeHumanWithAntsBrain": "Human with Ants Brain",
+  "@characterTypeHumanWithAntsBrain": {
+    "description": "Character type human with ants brain"
+  },
+
+  "characterTypeGame": "Game",
+  "@characterTypeGame": {
+    "description": "Character type game"
+  },
+
+  "characterTypeClone": "Clone",
+  "@characterTypeClone": {
+    "description": "Character type clone"
+  },
+
+  "characterTypeSelfAware": "Self-Aware",
+  "@characterTypeSelfAware": {
+    "description": "Character type self-aware"
+  },
+
+  "characterTypeCyborg": "Cyborg",
+  "@characterTypeCyborg": {
+    "description": "Character type cyborg"
+  },
+
+  "characterTypeBirdPerson": "Bird-Person",
+  "@characterTypeBirdPerson": {
+    "description": "Character type bird-person"
+  },
+
+  "characterTypeCorn": "Corn",
+  "@characterTypeCorn": {
+    "description": "Character type corn"
+  },
+
+  "characterTypePickle": "Pickle",
+  "@characterTypePickle": {
+    "description": "Character type pickle"
+  },
+
+  "characterTypeCat": "Cat",
+  "@characterTypeCat": {
+    "description": "Character type cat"
+  },
+
+  "characterTypeAnimatedCar": "Animated Car",
+  "@characterTypeAnimatedCar": {
+    "description": "Character type animated car"
+  },
+
+  "colorYellow": "Yellow",
+  "@colorYellow": {
+    "description": "Yellow color"
+  },
+
+  "colorBrown": "Brown",
+  "@colorBrown": {
+    "description": "Brown color"
+  },
+
+  "colorGray": "Gray",
+  "@colorGray": {
+    "description": "Gray color"
+  },
+
+  "locationDetails": "Location Details",
+  "@locationDetails": {
+    "description": "Location details page title"
+  },
+
+  "locationTypeDaycare": "Daycare",
+  "@locationTypeDaycare": {
+    "description": "Location type daycare"
+  },
+
+  "locationTypeSpa": "Spa",
+  "@locationTypeSpa": {
+    "description": "Location type spa"
+  },
+
+  "noLocationsFound": "No locations found",
+  "@noLocationsFound": {
+    "description": "Empty locations list message"
+  },
+  "episodeDetails": "Episode Details",
+  "@episodeDetails": {
+    "description": "Episode details page title"
+  },
+
+  "noEpisodesFound": "No episodes found",
+  "@noEpisodesFound": {
+    "description": "Empty episodes list message"
+  },
+
+  "information": "Information",
+  "@information": {
+    "description": "Information section title"
+  },
+
+  "credits": "Credits",
+  "@credits": {
+    "description": "Credits page title"
+  },
+
+  "nameRequired": "Name is required",
+  "@nameRequired": {
+    "description": "Validation message for empty name"
+  },
+
+  "characterTypeParasite": "Parasite",
+  "@characterTypeParasite": {
+    "description": "Character type parasite"
+  },
+
+  "characterTypeRobot": "Robot",
+  "@characterTypeRobot": {
+    "description": "Character type robot"
+  },
+
+  "characterTypeHumanoid": "Humanoid",
+  "@characterTypeHumanoid": {
+    "description": "Character type humanoid"
+  },
+
+  "characterTypeSuperhuman": "Superhuman",
+  "@characterTypeSuperhuman": {
+    "description": "Character type superhuman"
+  },
+
+  "characterTypeUnknown": "Unknown",
+  "@characterTypeUnknown": {
+    "description": "Character type unknown"
+  },
+
+  "welcomeBack": "Welcome back!",
+  "@welcomeBack": {
+    "description": "Welcome back greeting on login page"
+  },
+
+  "noResidentsFound": "No residents found",
+  "@noResidentsFound": {
+    "description": "Empty residents list message"
+  },
+
+  "noCharactersFound": "No characters found",
+  "@noCharactersFound": {
+    "description": "Empty characters list message"
+  },
+
+  "birthDate": "Date of Birth",
+  "@birthDate": {
+    "description": "Birth date field label"
+  },
+
+  "registerSuccess": "Account created successfully!",
+  "@registerSuccess": {
+    "description": "Registration success message"
+  },
+
+  "locationTypeMicroverse": "Microverse",
+  "@locationTypeMicroverse": {
+    "description": "Location type Microverse"
+  },
+
+  "locationTypeTv": "TV",
+  "@locationTypeTv": {
+    "description": "Location type TV"
+  },
+
+  "locationTypeResort": "Resort",
+  "@locationTypeResort": {
+    "description": "Location type Resort"
+  },
+
+  "locationTypeDimension": "Dimension",
+  "@locationTypeDimension": {
+    "description": "Location type Dimension"
+  },
+
+  "locationTypeDream": "Dream",
+  "@locationTypeDream": {
+    "description": "Location type Dream"
+  },
+
+  "locationTypeFantasyTown": "Fantasy Town",
+  "@locationTypeFantasyTown": {
+    "description": "Location type Fantasy Town"
+  },
+
+  "locationTypeMenagerie": "Menagerie",
+  "@locationTypeMenagerie": {
+    "description": "Location type Menagerie"
+  },
+
+  "locationTypeGame": "Game",
+  "@locationTypeGame": {
+    "description": "Location type Game"
+  },
+
+  "locationTypeCustoms": "Customs",
+  "@locationTypeCustoms": {
+    "description": "Location type Customs"
+  },
+
+  "locationTypePoliceStation": "Police Station",
+  "@locationTypePoliceStation": {
+    "description": "Location type Police Station"
+  },
+
+  "locationTypeArcade": "Arcade",
+  "@locationTypeArcade": {
+    "description": "Location type Arcade"
+  },
+
+  "locationTypeQuadrant": "Quadrant",
+  "@locationTypeQuadrant": {
+    "description": "Location type Quadrant"
+  },
+
+  "locationTypeSpacecraft": "Spacecraft",
+  "@locationTypeSpacecraft": {
+    "description": "Location type Spacecraft"
+  },
+
+  "locationTypeMount": "Mount",
+  "@locationTypeMount": {
+    "description": "Location type Mount"
+  },
+
+  "locationTypeCluster": "Cluster",
+  "@locationTypeCluster": {
+    "description": "Location type Cluster"
+  },
+
+  "locationTypeUnknown": "Unknown",
+  "@locationTypeUnknown": {
+    "description": "Location type Unknown"
+  },
+
+  "residents": "Residents",
+  "@residents": {
+    "description": "Residents section title"
+  },
+
+  "airDate": "Air Date",
+  "@airDate": {
+    "description": "Episode air date label"
+  },
+
+  "enterAgain": "Enter again",
+  "@enterAgain": {
+    "description": "Enter again button text for biometric login"
+  },
+
+  "loginToContinue": "Login to continue",
+  "@loginToContinue": {
+    "description": "Login to continue message"
+  },
+
+  "nameLabel": "Name",
+  "@nameLabel": {
+    "description": "Name field label"
+  },
+
+  "season": "Season",
+  "@season": {
+    "description": "Season label for episodes"
+  }
+}

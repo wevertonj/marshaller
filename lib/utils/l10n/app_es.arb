@@ -1,0 +1,1429 @@
+{
+  "@@locale": "es",
+
+  "appTitle": "Marshaller",
+  "@appTitle": {
+    "description": "Título de la aplicación"
+  },
+
+  "itemCount": "{count, plural, =0{Ningún elemento} =1{1 elemento} other{{count} elementos}}",
+  "@itemCount": {
+    "description": "Contador de elementos con pluralización",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+
+  "errorGeneric": "Ocurrió un error. Inténtelo de nuevo.",
+  "@errorGeneric": {
+    "description": "Mensaje de error genérico"
+  },
+
+  "errorNetwork": "Sin conexión a Internet",
+  "@errorNetwork": {
+    "description": "Mensaje de error de conexión"
+  },
+
+  "errorUnauthorized": "Sesión expirada. Inicie sesión nuevamente.",
+  "@errorUnauthorized": {
+    "description": "Mensaje de error de sesión expirada"
+  },
+
+  "errorTimeout": "Tiempo de conexión agotado",
+  "@errorTimeout": {
+    "description": "Mensaje de error de tiempo de espera"
+  },
+
+  "cancel": "Cancelar",
+  "@cancel": {
+    "description": "Texto del botón cancelar"
+  },
+
+  "confirm": "Confirmar",
+  "@confirm": {
+    "description": "Texto del botón confirmar"
+  },
+
+  "save": "Guardar",
+  "@save": {
+    "description": "Texto del botón guardar"
+  },
+
+  "delete": "Eliminar",
+  "@delete": {
+    "description": "Texto del botón eliminar"
+  },
+
+  "edit": "Editar",
+  "@edit": {
+    "description": "Texto del botón editar"
+  },
+
+  "loading": "Cargando...",
+  "@loading": {
+    "description": "Texto de carga"
+  },
+
+  "retry": "Intentar de nuevo",
+  "@retry": {
+    "description": "Texto del botón reintentar"
+  },
+
+  "close": "Cerrar",
+  "@close": {
+    "description": "Texto del botón cerrar"
+  },
+
+  "continue_": "Continuar",
+  "@continue_": {
+    "description": "Texto del botón continuar"
+  },
+
+  "back": "Volver",
+  "@back": {
+    "description": "Texto del botón volver"
+  },
+
+  "ok": "OK",
+  "@ok": {
+    "description": "Texto del botón OK"
+  },
+
+  "error": "Error",
+  "@error": {
+    "description": "Título de error"
+  },
+
+  "info": "Información",
+  "@info": {
+    "description": "Título de información"
+  },
+
+  "yes": "Sí",
+  "@yes": {
+    "description": "Texto del botón sí"
+  },
+
+  "no": "No",
+  "@no": {
+    "description": "Texto del botón no"
+  },
+
+  "home": "Inicio",
+  "@home": {
+    "description": "Título de la pantalla inicial"
+  },
+
+  "settings": "Configuración",
+  "@settings": {
+    "description": "Título de la pantalla de configuración"
+  },"goodMorning": "Buenos días",
+  "@goodMorning": {
+    "description": "Saludo de la mañana"
+  },
+
+  "goodAfternoon": "Buenas tardes",
+  "@goodAfternoon": {
+    "description": "Saludo de la tarde"
+  },
+
+  "goodEvening": "Buenas noches",
+  "@goodEvening": {
+    "description": "Saludo de la noche"
+  },
+
+  "goodNight": "Buenas noches",
+  "@goodNight": {
+    "description": "Saludo de la noche (despedida)"
+  },
+
+  "darkMode": "Modo oscuro",
+  "@darkMode": {
+    "description": "Opción de modo oscuro"
+  },
+
+  "lightMode": "Modo claro",
+  "@lightMode": {
+    "description": "Opción de modo claro"
+  },
+
+  "systemMode": "Predeterminado del sistema",
+  "@systemMode": {
+    "description": "Opción de tema del sistema"
+  },"keyNotFound": "Clave de traducción no encontrada",
+  "@keyNotFound": {
+    "description": "Error cuando la clave de traducción no existe"
+  },"storageError": "Error al acceder al almacenamiento seguro",
+  "@storageError": {
+    "description": "Error de almacenamiento"
+  },
+
+  "deviceInfoError": "Error al obtener información del dispositivo",
+  "@deviceInfoError": {
+    "description": "Error al obtener información del dispositivo"
+  },"preferences": "Preferencias",
+  "@preferences": {
+    "description": "Título de la sección de preferencias"
+  },
+
+  "language": "Idioma",
+  "@language": {
+    "description": "Opción de idioma"
+  },
+
+  "theme": "Tema",
+  "@theme": {
+    "description": "Opción de tema"
+  },
+
+  "about": "Acerca de",
+  "@about": {
+    "description": "Opción acerca de la aplicación"
+  },
+
+  "version": "Versión",
+  "@version": {
+    "description": "Etiqueta de versión"
+  },
+
+  "privacyPolicy": "Política de privacidad",
+  "@privacyPolicy": {
+    "description": "Enlace a la política de privacidad"
+  },
+
+  "termsOfService": "Términos de servicio",
+  "@termsOfService": {
+    "description": "Enlace a los términos de servicio"
+  },
+
+  "openSourceLicenses": "Licencias de código abierto",
+  "@openSourceLicenses": {
+    "description": "Enlace a licencias de código abierto"
+  },
+
+  "system": "Sistema",
+  "@system": {
+    "description": "Opción sistema"
+  },
+
+  "light": "Claro",
+  "@light": {
+    "description": "Opción tema claro"
+  },
+
+  "dark": "Oscuro",
+  "@dark": {
+    "description": "Opción tema oscuro"
+  },
+
+  "creditsDescription": "Esta aplicación utiliza datos de la API pública de Rick y Morty.",
+  "@creditsDescription": {
+    "description": "Descripción de los créditos"
+  },
+
+  "creditsDevelopedBy": "Desarrollado por ",
+  "@creditsDevelopedBy": {
+    "description": "Prefijo para crédito del desarrollador"
+  },
+
+  "creditsUsingDataFrom": " usando datos de ",
+  "@creditsUsingDataFrom": {
+    "description": "Conector para crédito de la API"
+  },
+
+  "creditsApiSource": "API: rickandmortyapi.com",
+  "@creditsApiSource": {
+    "description": "Fuente de la API"
+  },
+
+  "creditsImagesSource": "Imágenes: Adult Swim",
+  "@creditsImagesSource": {
+    "description": "Fuente de las imágenes"
+  },
+
+  "lottieFilesSource": "Animaciones: LottieFiles",
+  "@lottieFilesSource": {
+    "description": "Fuente de las animaciones"
+  },
+
+  "colorGreen": "Verde",
+  "@colorGreen": {
+    "description": "Color verde"
+  },
+
+  "colorBlue": "Azul",
+  "@colorBlue": {
+    "description": "Color azul"
+  },
+
+  "colorPurple": "Púrpura",
+  "@colorPurple": {
+    "description": "Color púrpura"
+  },
+
+  "colorOrange": "Naranja",
+  "@colorOrange": {
+    "description": "Color naranja"
+  },
+
+  "colorRed": "Rojo",
+  "@colorRed": {
+    "description": "Color rojo"
+  },
+
+  "colorTeal": "Verde azulado",
+  "@colorTeal": {
+    "description": "Color verde azulado"
+  },
+
+  "colorPink": "Rosa",
+  "@colorPink": {
+    "description": "Color rosa"
+  },
+
+  "themeColor": "Color del tema",
+  "@themeColor": {
+    "description": "Opción de color del tema"
+  },
+
+  "themeSelect": "Seleccione un tema",
+  "@themeSelect": {
+    "description": "Instrucción para seleccionar tema"
+  },
+
+  "characters": "Personajes",
+  "@characters": {
+    "description": "Título de la sección de personajes"
+  },
+
+  "locations": "Ubicaciones",
+  "@locations": {
+    "description": "Título de la sección de ubicaciones"
+  },
+
+  "episodes": "Episodios",
+  "@episodes": {
+    "description": "Título de la sección de episodios"
+  },
+
+  "search": "Buscar",
+  "@search": {
+    "description": "Marcador de posición de búsqueda"
+  },
+
+  "searchCharacters": "Buscar personajes",
+  "@searchCharacters": {
+    "description": "Marcador de posición de búsqueda de personajes"
+  },
+
+  "searchLocations": "Buscar ubicaciones",
+  "@searchLocations": {
+    "description": "Marcador de posición de búsqueda de ubicaciones"
+  },
+
+  "searchEpisodes": "Buscar episodios",
+  "@searchEpisodes": {
+    "description": "Marcador de posición de búsqueda de episodios"
+  },
+
+  "noResults": "No se encontraron resultados",
+  "@noResults": {
+    "description": "Mensaje cuando no hay resultados"
+  },
+
+  "tryAgain": "Intentar de nuevo",
+  "@tryAgain": {
+    "description": "Botón para intentar de nuevo"
+  },
+
+  "filters": "Filtros",
+  "@filters": {
+    "description": "Título de filtros"
+  },
+
+  "clearFilters": "Limpiar filtros",
+  "@clearFilters": {
+    "description": "Botón para limpiar filtros"
+  },
+
+  "applyFilters": "Aplicar filtros",
+  "@applyFilters": {
+    "description": "Botón para aplicar filtros"
+  },
+
+  "status": "Estado",
+  "@status": {
+    "description": "Etiqueta de estado"
+  },
+
+  "species": "Especie",
+  "@species": {
+    "description": "Etiqueta de especie"
+  },
+
+  "gender": "Género",
+  "@gender": {
+    "description": "Etiqueta de género"
+  },
+
+  "type": "Tipo",
+  "@type": {
+    "description": "Etiqueta de tipo"
+  },
+
+  "dimension": "Dimensión",
+  "@dimension": {
+    "description": "Etiqueta de dimensión"
+  },
+
+  "origin": "Origen",
+  "@origin": {
+    "description": "Etiqueta de origen"
+  },
+
+  "location": "Ubicación",
+  "@location": {
+    "description": "Etiqueta de ubicación"
+  },
+
+  "episode": "Episodio",
+  "@episode": {
+    "description": "Etiqueta de episodio"
+  },
+
+  "character": "Personaje",
+  "@character": {
+    "description": "Etiqueta de personaje"
+  },
+
+  "statusAlive": "Vivo",
+  "@statusAlive": {
+    "description": "Estado vivo"
+  },
+
+  "statusDead": "Muerto",
+  "@statusDead": {
+    "description": "Estado muerto"
+  },
+
+  "statusUnknown": "Desconocido",
+  "@statusUnknown": {
+    "description": "Estado desconocido"
+  },
+
+  "genderMale": "Masculino",
+  "@genderMale": {
+    "description": "Género masculino"
+  },
+
+  "genderFemale": "Femenino",
+  "@genderFemale": {
+    "description": "Género femenino"
+  },
+
+  "genderGenderless": "Sin género",
+  "@genderGenderless": {
+    "description": "Sin género"
+  },
+
+  "genderUnknown": "Desconocido",
+  "@genderUnknown": {
+    "description": "Género desconocido"
+  },
+
+  "speciesHuman": "Humano",
+  "@speciesHuman": {
+    "description": "Especie humana"
+  },
+
+  "speciesAlien": "Alienígena",
+  "@speciesAlien": {
+    "description": "Especie alienígena"
+  },
+
+  "speciesHumanoid": "Humanoide",
+  "@speciesHumanoid": {
+    "description": "Especie humanoide"
+  },
+
+  "speciesPoopybutthole": "Poopybutthole",
+  "@speciesPoopybutthole": {
+    "description": "Especie Poopybutthole"
+  },
+
+  "speciesMythologicalCreature": "Criatura mitológica",
+  "@speciesMythologicalCreature": {
+    "description": "Especie criatura mitológica"
+  },
+
+  "speciesAnimal": "Animal",
+  "@speciesAnimal": {
+    "description": "Especie animal"
+  },
+
+  "speciesRobot": "Robot",
+  "@speciesRobot": {
+    "description": "Especie robot"
+  },
+
+  "speciesCronenberg": "Cronenberg",
+  "@speciesCronenberg": {
+    "description": "Especie Cronenberg"
+  },
+
+  "speciesDisease": "Enfermedad",
+  "@speciesDisease": {
+    "description": "Especie enfermedad"
+  },
+
+  "speciesUnknown": "Desconocido",
+  "@speciesUnknown": {
+    "description": "Especie desconocida"
+  },
+
+  "locationTypePlanet": "Planeta",
+  "@locationTypePlanet": {
+    "description": "Tipo de ubicación: Planeta"
+  },
+
+  "locationTypeCluster": "Cúmulo",
+  "@locationTypeCluster": {
+    "description": "Tipo de ubicación: Cúmulo"
+  },
+
+  "locationTypeSpaceStation": "Estación espacial",
+  "@locationTypeSpaceStation": {
+    "description": "Tipo de ubicación: Estación espacial"
+  },
+
+  "locationTypeMicroverse": "Microverso",
+  "@locationTypeMicroverse": {
+    "description": "Tipo de ubicación: Microverso"
+  },
+
+  "locationTypeTv": "TV",
+  "@locationTypeTv": {
+    "description": "Tipo de ubicación: TV"
+  },
+
+  "locationTypeResort": "Resort",
+  "@locationTypeResort": {
+    "description": "Tipo de ubicación: Resort"
+  },
+
+  "locationTypeFantasyTown": "Ciudad de fantasía",
+  "@locationTypeFantasyTown": {
+    "description": "Tipo de ubicación: Ciudad de fantasía"
+  },
+
+  "locationTypeDream": "Sueño",
+  "@locationTypeDream": {
+    "description": "Tipo de ubicación: Sueño"
+  },
+
+  "locationTypeDimension": "Dimensión",
+  "@locationTypeDimension": {
+    "description": "Tipo de ubicación: Dimensión"
+  },
+
+  "locationTypeUnknown": "Desconocido",
+  "@locationTypeUnknown": {
+    "description": "Tipo de ubicación: Desconocido"
+  },
+
+  "locationTypeMenagerie": "Colección",
+  "@locationTypeMenagerie": {
+    "description": "Tipo de ubicación: Colección"
+  },
+
+  "locationTypeGame": "Juego",
+  "@locationTypeGame": {
+    "description": "Tipo de ubicación: Juego"
+  },
+
+  "locationTypeCustoms": "Aduana",
+  "@locationTypeCustoms": {
+    "description": "Tipo de ubicación: Aduana"
+  },
+
+  "locationTypeDeadworld": "Mundo muerto",
+  "@locationTypeDeadworld": {
+    "description": "Tipo de ubicación: Mundo muerto"
+  },
+
+  "locationTypeArcade": "Arcade",
+  "@locationTypeArcade": {
+    "description": "Tipo de ubicación: Arcade"
+  },
+
+  "locationTypeSpacecraft": "Nave espacial",
+  "@locationTypeSpacecraft": {
+    "description": "Tipo de ubicación: Nave espacial"
+  },
+
+  "locationTypeArtificiallyGenerated": "Generado artificialmente",
+  "@locationTypeArtificiallyGenerated": {
+    "description": "Tipo de ubicación: Generado artificialmente"
+  },
+
+  "locationTypeMachine": "Máquina",
+  "@locationTypeMachine": {
+    "description": "Tipo de ubicación: Máquina"
+  },
+
+  "locationTypeAsteriod": "Asteroide",
+  "@locationTypeAsteriod": {
+    "description": "Tipo de ubicación: Asteroide"
+  },
+
+  "locationTypeBox": "Caja",
+  "@locationTypeBox": {
+    "description": "Tipo de ubicación: Caja"
+  },
+
+  "locationTypeElemental": "Elemental",
+  "@locationTypeElemental": {
+    "description": "Tipo de ubicación: Elemental"
+  },
+
+  "locationTypeMemory": "Memoria",
+  "@locationTypeMemory": {
+    "description": "Tipo de ubicación: Memoria"
+  },
+
+  "locationTypeMount": "Monte",
+  "@locationTypeMount": {
+    "description": "Tipo de ubicación: Monte"
+  },
+
+  "locationTypeNonDiegeticAlternateReality": "Realidad alternativa no diegética",
+  "@locationTypeNonDiegeticAlternateReality": {
+    "description": "Tipo de ubicación: Realidad alternativa no diegética"
+  },
+
+  "locationTypePoliceStation": "Comisaría",
+  "@locationTypePoliceStation": {
+    "description": "Tipo de ubicación: Comisaría"
+  },
+
+  "locationTypeQuadrant": "Cuadrante",
+  "@locationTypeQuadrant": {
+    "description": "Tipo de ubicación: Cuadrante"
+  },
+
+  "locationTypeReality": "Realidad",
+  "@locationTypeReality": {
+    "description": "Tipo de ubicación: Realidad"
+  },
+
+  "locationTypeTeenyverse": "Teenyverse",
+  "@locationTypeTeenyverse": {
+    "description": "Tipo de ubicación: Teenyverse"
+  },
+
+  "characterTypeHuman": "Humano",
+  "@characterTypeHuman": {
+    "description": "Tipo de personaje: Humano"
+  },
+
+  "characterTypeRobot": "Robot",
+  "@characterTypeRobot": {
+    "description": "Tipo de personaje: Robot"
+  },
+
+  "characterTypeAlien": "Alienígena",
+  "@characterTypeAlien": {
+    "description": "Tipo de personaje: Alienígena"
+  },
+
+  "characterTypeHumanoid": "Humanoide",
+  "@characterTypeHumanoid": {
+    "description": "Tipo de personaje: Humanoide"
+  },
+
+  "characterTypeUnknown": "Desconocido",
+  "@characterTypeUnknown": {
+    "description": "Tipo de personaje: Desconocido"
+  },
+
+  "characterTypeParasite": "Parásito",
+  "@characterTypeParasite": {
+    "description": "Tipo de personaje: Parásito"
+  },
+
+  "characterTypeMytholog": "Mitológico",
+  "@characterTypeMytholog": {
+    "description": "Tipo de personaje: Mitológico"
+  },
+
+  "characterTypeSuperhuman": "Superhumano",
+  "@characterTypeSuperhuman": {
+    "description": "Tipo de personaje: Superhumano"
+  },
+
+  "characterTypeAnimal": "Animal",
+  "@characterTypeAnimal": {
+    "description": "Tipo de personaje: Animal"
+  },
+
+  "characterTypeDisease": "Enfermedad",
+  "@characterTypeDisease": {
+    "description": "Tipo de personaje: Enfermedad"
+  },
+
+  "characterTypeCronenberg": "Cronenberg",
+  "@characterTypeCronenberg": {
+    "description": "Tipo de personaje: Cronenberg"
+  },
+
+  "characterTypeMicroorganism": "Microorganismo",
+  "@characterTypeMicroorganism": {
+    "description": "Tipo de personaje: Microorganismo"
+  },
+
+  "appearsInEpisodes": "{count, plural, =1{Aparece en 1 episodio} other{Aparece en {count} episodios}}",
+  "@appearsInEpisodes": {
+    "description": "Contador de episodios en los que aparece el personaje",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+
+  "residentsCount": "{count, plural, =0{Ningún residente} =1{1 residente} other{{count} residentes}}",
+  "@residentsCount": {
+    "description": "Contador de residentes de una ubicación",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+
+  "charactersCount": "{count, plural, =0{Ningún personaje} =1{1 personaje} other{{count} personajes}}",
+  "@charactersCount": {
+    "description": "Contador de personajes de un episodio",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+
+
+
+  "locationsCount": "{count, plural, =0{Ninguna ubicación} =1{1 ubicación} other{{count} ubicaciones}}",
+  "@locationsCount": {
+    "description": "Número de ubicaciones",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+
+  "episodesCount": "{count, plural, =0{Sin episodios} =1{1 episodio} other{{count} episodios}}",
+  "@episodesCount": {
+    "description": "Number of episodes in season",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+
+  "noEpisodesFound": "No se encontraron episodios",
+  "@noEpisodesFound": {
+    "description": "Mensaje cuando no hay episodios"
+  },
+
+  "noResidentsFound": "No se encontraron residentes",
+  "@noResidentsFound": {
+    "description": "Mensaje cuando no hay residentes"
+  },
+
+  "noCharactersFound": "No se encontraron personajes",
+  "@noCharactersFound": {
+    "description": "Mensaje cuando no hay personajes"
+  },
+
+  "airDate": "Fecha de emisión",
+  "@airDate": {
+    "description": "Etiqueta de fecha de emisión del episodio"
+  },
+
+  "seasonEpisode": "T{season}E{episode}",
+  "@seasonEpisode": {
+    "description": "Formato de temporada y episodio",
+    "placeholders": {
+      "season": {
+        "type": "String",
+        "example": "01"
+      },
+      "episode": {
+        "type": "String",
+        "example": "01"
+      }
+    }
+  },
+
+  "unknownLocation": "Ubicación desconocida",
+  "@unknownLocation": {
+    "description": "Texto para ubicación desconocida"
+  },
+
+  "unknownOrigin": "Origen desconocido",
+  "@unknownOrigin": {
+    "description": "Texto para origen desconocido"
+  },
+
+  "firstAppearedIn": "Primera aparición en",
+  "@firstAppearedIn": {
+    "description": "Etiqueta de primera aparición"
+  },
+
+  "lastKnownLocation": "Última ubicación conocida",
+  "@lastKnownLocation": {
+    "description": "Etiqueta de la última ubicación"
+  },
+
+  "details": "Detalles",
+  "@details": {
+    "description": "Título de detalles"
+  },
+
+  "share": "Compartir",
+  "@share": {
+    "description": "Botón compartir"
+  },
+
+  "favorites": "Favoritos",
+  "@favorites": {
+    "description": "Título de favoritos"
+  },
+
+  "addToFavorites": "Añadir a favoritos",
+  "@addToFavorites": {
+    "description": "Botón añadir a favoritos"
+  },
+
+  "removeFromFavorites": "Eliminar de favoritos",
+  "@removeFromFavorites": {
+    "description": "Botón eliminar de favoritos"
+  },
+
+  "noFavoritesYet": "Aún no hay favoritos",
+  "@noFavoritesYet": {
+    "description": "Mensaje cuando no hay favoritos"
+  },
+
+  "residents": "Residentes",
+  "@residents": {
+    "description": "Título de la sección de residentes"
+  },
+
+  "appearancesTab": "Apariciones",
+  "@appearancesTab": {
+    "description": "Pestaña de apariciones"
+  },
+
+  "infoTab": "Info",
+  "@infoTab": {
+    "description": "Pestaña de información"
+  },
+
+  "created": "Creado el",
+  "@created": {
+    "description": "Etiqueta de fecha de creación"
+  },
+
+  "all": "Todos",
+  "@all": {
+    "description": "Opción todos en los filtros"
+  },
+
+  "credits": "Créditos",
+  "@credits": {
+    "description": "Título de la sección de créditos"
+  },
+
+  "security": "Seguridad",
+  "@security": {
+    "description": "Título de la sección de seguridad"
+  },"logoutConfirmation": "¿Realmente desea cerrar sesión?",
+  "@logoutConfirmation": {
+    "description": "Mensaje de confirmación de cierre de sesión"
+  },
+
+  "logoutConfirmationMessage": "Necesitará iniciar sesión nuevamente para acceder a la aplicación.",
+  "@logoutConfirmationMessage": {
+    "description": "Mensaje detallado de confirmación de cierre de sesión"
+  },"appearance": "Apariencia",
+  "@appearance": {
+    "description": "Título de la sección de apariencia"
+  },
+
+  "account": "Cuenta",
+  "@account": {
+    "description": "Título de la sección de cuenta"
+  },
+
+  "deleteAccount": "Eliminar cuenta",
+  "@deleteAccount": {
+    "description": "Botón de eliminar cuenta"
+  },
+
+  "deleteAccountConfirmation": "¿Está seguro de que desea eliminar su cuenta?",
+  "@deleteAccountConfirmation": {
+    "description": "Mensaje de confirmación de eliminación de cuenta"
+  },
+
+  "deleteAccountWarning": "Esta acción es irreversible. Todos sus datos se perderán.",
+  "@deleteAccountWarning": {
+    "description": "Advertencia sobre eliminación de cuenta"
+  },
+
+  "charactersNotFoundMessage": "No se encontraron personajes con los filtros aplicados",
+  "@charactersNotFoundMessage": {
+    "description": "Mensaje cuando no hay personajes con filtros"
+  },
+
+  "locationsNotFoundMessage": "No se encontraron ubicaciones con los filtros aplicados",
+  "@locationsNotFoundMessage": {
+    "description": "Mensaje cuando no hay ubicaciones con filtros"
+  },
+
+  "episodesNotFoundMessage": "No se encontraron episodios con los filtros aplicados",
+  "@episodesNotFoundMessage": {
+    "description": "Mensaje cuando no hay episodios con filtros"
+  },
+
+  "loadMore": "Cargar más",
+  "@loadMore": {
+    "description": "Botón para cargar más elementos"
+  },
+
+  "endOfList": "Fin de la lista",
+  "@endOfList": {
+    "description": "Mensaje de fin de la lista"
+  },
+
+  "noMoreItems": "No hay más elementos",
+  "@noMoreItems": {
+    "description": "Mensaje cuando no hay más elementos"
+  },
+
+  "swipeToRefresh": "Deslice para actualizar",
+  "@swipeToRefresh": {
+    "description": "Instrucción para actualizar"
+  },
+
+  "refresh": "Actualizar",
+  "@refresh": {
+    "description": "Botón actualizar"
+  },
+
+  "seeAll": "Ver todos",
+  "@seeAll": {
+    "description": "Enlace para ver todos los elementos"
+  },
+
+  "seeMore": "Ver más",
+  "@seeMore": {
+    "description": "Enlace para ver más"
+  },
+
+  "seeLess": "Ver menos",
+  "@seeLess": {
+    "description": "Enlace para ver menos"
+  },
+
+  "name": "Nombre",
+  "@name": {
+    "description": "Etiqueta de nombre"
+  },
+
+  "nameRequired": "El nombre es obligatorio",
+  "@nameRequired": {
+    "description": "Mensaje de validación de nombre"
+  },
+
+  "confirmPasswordRequired": "La confirmación de contraseña es obligatoria",
+  "@confirmPasswordRequired": {
+    "description": "Mensaje de validación de confirmación de contraseña"
+  },
+
+  "passwordsDoNotMatch": "Las contraseñas no coinciden",
+  "@passwordsDoNotMatch": {
+    "description": "Mensaje cuando las contraseñas no coinciden"
+  },
+
+  "successfullyRegistered": "¡Registro realizado con éxito!",
+  "@successfullyRegistered": {
+    "description": "Mensaje de éxito en el registro"
+  },
+
+  "successfullyLoggedIn": "¡Inicio de sesión realizado con éxito!",
+  "@successfullyLoggedIn": {
+    "description": "Mensaje de éxito en el inicio de sesión"
+  },
+
+  "invalidCredentials": "Credenciales no válidas",
+  "@invalidCredentials": {
+    "description": "Mensaje de credenciales no válidas"
+  },
+
+  "accountCreated": "Cuenta creada con éxito",
+  "@accountCreated": {
+    "description": "Mensaje de cuenta creada"
+  },
+
+  "errorCreatingAccount": "Error al crear cuenta",
+  "@errorCreatingAccount": {
+    "description": "Mensaje de error al crear cuenta"
+  },
+
+  "portuguese": "Portugués",
+  "@portuguese": {
+    "description": "Idioma portugués"
+  },
+
+  "english": "Inglés",
+  "@english": {
+    "description": "Idioma inglés"
+  },
+
+  "spanish": "Español",
+  "@spanish": {
+    "description": "Idioma español"
+  },
+
+  "invalidName": "Nombre no válido",
+  "@invalidName": {
+    "description": "Mensaje de validación para nombre no válido"
+  },
+
+  "passwordMinLength": "La contraseña debe tener al menos 8 caracteres",
+  "@passwordMinLength": {
+    "description": "Mensaje de validación para longitud mínima de contraseña"
+  },
+
+  "passwordMustHaveLowercase": "La contraseña debe tener al menos una letra minúscula",
+  "@passwordMustHaveLowercase": {
+    "description": "Mensaje de validación para requisito de minúscula"
+  },
+
+  "passwordMustHaveUppercase": "La contraseña debe tener al menos una letra mayúscula",
+  "@passwordMustHaveUppercase": {
+    "description": "Mensaje de validación para requisito de mayúscula"
+  },
+
+  "passwordMustHaveNumber": "La contraseña debe tener al menos un número",
+  "@passwordMustHaveNumber": {
+    "description": "Mensaje de validación para requisito de número"
+  },
+
+  "passwordMustHaveSpecialCharacter": "La contraseña debe tener al menos un carácter especial",
+  "@passwordMustHaveSpecialCharacter": {
+    "description": "Mensaje de validación para requisito de carácter especial"
+  },
+
+  "invalidBirthDate": "Fecha de nacimiento no válida",
+  "@invalidBirthDate": {
+    "description": "Mensaje de validación para fecha de nacimiento no válida"
+  },
+
+  "tooOldBirthDate": "Fecha de nacimiento demasiado antigua",
+  "@tooOldBirthDate": {
+    "description": "Mensaje de validación para fecha de nacimiento muy antigua"
+  },
+
+  "mode": "Modo",
+  "@mode": {
+    "description": "Etiqueta de configuración de modo de tema"
+  },
+
+  "modeSelect": "Seleccionar Modo",
+  "@modeSelect": {
+    "description": "Título del diálogo de selección de modo"
+  },
+
+  "systemDefault": "Predeterminado del Sistema",
+  "@systemDefault": {
+    "description": "Opción predeterminada del sistema para idioma"
+  },"allNotifications": "Todas las Notificaciones",
+  "@allNotifications": {
+    "description": "Título del interruptor de todas las notificaciones"
+  },
+
+  "allNotificationsDescription": "Habilitar o deshabilitar todas las notificaciones",
+  "@allNotificationsDescription": {
+    "description": "Descripción del interruptor de todas las notificaciones"
+  },
+
+  "generalNotifications": "Notificaciones Generales",
+  "@generalNotifications": {
+    "description": "Título del interruptor de notificaciones generales"
+  },
+
+  "generalNotificationsDescription": "Reciba actualizaciones y noticias generales de la aplicación",
+  "@generalNotificationsDescription": {
+    "description": "Descripción del interruptor de notificaciones generales"
+  },
+
+  "promotionalNotifications": "Notificaciones Promocionales",
+  "@promotionalNotifications": {
+    "description": "Título del interruptor de notificaciones promocionales"
+  },
+
+  "promotionalNotificationsDescription": "Reciba ofertas especiales y promociones",
+  "@promotionalNotificationsDescription": {
+    "description": "Descripción del interruptor de notificaciones promocionales"
+  },
+
+  "errorSaving": "Error al guardar",
+  "@errorSaving": {
+    "description": "Prefijo de mensaje de error al guardar"
+  },"lottieSimpleLicense": "Licencia Simple de Lottie",
+  "@lottieSimpleLicense": {
+    "description": "Tipo de licencia de animación Lottie"
+  },
+
+  "thirdPartyAssets": "Recursos de Terceros",
+  "@thirdPartyAssets": {
+    "description": "Título de sección de recursos de terceros"
+  },
+
+  "thirdPartyLibraries": "Bibliotecas de Terceros",
+  "@thirdPartyLibraries": {
+    "description": "Título de sección de bibliotecas de terceros"
+  },
+
+  "license": "Licencia",
+  "@license": {
+    "description": "Etiqueta de licencia"
+  },
+
+  "source": "Fuente",
+  "@source": {
+    "description": "Etiqueta de fuente"
+  },
+
+  "exploreRickAndMorty": "Explora el universo de Rick y Morty",
+  "@exploreRickAndMorty": {
+    "description": "Subtítulo de la página principal"
+  },
+
+  "charactersDescription": "Descubre todos los personajes del programa",
+  "@charactersDescription": {
+    "description": "Descripción de la sección de personajes"
+  },
+
+  "locationsDescription": "Explora las ubicaciones del multiverso",
+  "@locationsDescription": {
+    "description": "Descripción de la sección de ubicaciones"
+  },
+
+  "episodesDescription": "Todos los episodios de todas las temporadas",
+  "@episodesDescription": {
+    "description": "Descripción de la sección de episodios"
+  },
+
+  "welcomeDescription": "Explora el universo de Rick y Morty y descubre todos los personajes, ubicaciones y episodios",
+  "@welcomeDescription": {
+    "description": "Descripción de la página de bienvenida"
+  },
+
+  "characterDetails": "Detalles del Personaje",
+  "@characterDetails": {
+    "description": "Título de la página de detalles del personaje"
+  },
+
+  "genderless": "Sin Género",
+  "@genderless": {
+    "description": "Etiqueta de género sin género"
+  },
+
+  "characterTypeGeneticExperiment": "Experimento Genético",
+  "@characterTypeGeneticExperiment": {
+    "description": "Tipo de personaje: experimento genético"
+  },
+
+  "characterTypeHumanWithAntennae": "Humano con Antenas",
+  "@characterTypeHumanWithAntennae": {
+    "description": "Tipo de personaje: humano con antenas"
+  },
+
+  "characterTypeHumanWithAntsBrain": "Humano con Cerebro de Hormigas",
+  "@characterTypeHumanWithAntsBrain": {
+    "description": "Tipo de personaje: humano con cerebro de hormigas"
+  },
+
+  "characterTypeGame": "Juego",
+  "@characterTypeGame": {
+    "description": "Tipo de personaje: juego"
+  },
+
+  "characterTypeClone": "Clon",
+  "@characterTypeClone": {
+    "description": "Tipo de personaje: clon"
+  },
+
+  "characterTypeSelfAware": "Autoconsciente",
+  "@characterTypeSelfAware": {
+    "description": "Tipo de personaje: autoconsciente"
+  },
+
+  "characterTypeCyborg": "Cyborg",
+  "@characterTypeCyborg": {
+    "description": "Tipo de personaje: cyborg"
+  },
+
+  "characterTypeBirdPerson": "Persona Pájaro",
+  "@characterTypeBirdPerson": {
+    "description": "Tipo de personaje: persona pájaro"
+  },
+
+  "characterTypeCorn": "Maíz",
+  "@characterTypeCorn": {
+    "description": "Tipo de personaje: maíz"
+  },
+
+  "characterTypePickle": "Pepinillo",
+  "@characterTypePickle": {
+    "description": "Tipo de personaje: pepinillo"
+  },
+
+  "characterTypeCat": "Gato",
+  "@characterTypeCat": {
+    "description": "Tipo de personaje: gato"
+  },
+
+  "characterTypeAnimatedCar": "Auto Animado",
+  "@characterTypeAnimatedCar": {
+    "description": "Tipo de personaje: auto animado"
+  },
+
+  "colorYellow": "Amarillo",
+  "@colorYellow": {
+    "description": "Color amarillo"
+  },
+
+  "colorBrown": "Marrón",
+  "@colorBrown": {
+    "description": "Color marrón"
+  },
+
+  "colorGray": "Gris",
+  "@colorGray": {
+    "description": "Color gris"
+  },
+
+  "locationDetails": "Detalles de Ubicación",
+  "@locationDetails": {
+    "description": "Título de la página de detalles de ubicación"
+  },
+
+  "locationTypeDaycare": "Guardería",
+  "@locationTypeDaycare": {
+    "description": "Tipo de ubicación: Guardería"
+  },
+
+  "locationTypeSpa": "Spa",
+  "@locationTypeSpa": {
+    "description": "Tipo de ubicación: Spa"
+  },
+
+  "noLocationsFound": "No se encontraron ubicaciones",
+  "@noLocationsFound": {
+    "description": "Mensaje cuando no hay ubicaciones"
+  },
+
+  "episodeDetails": "Detalles del Episodio",
+  "@episodeDetails": {
+    "description": "Título de la página de detalles del episodio"
+  },
+
+  "noEpisodesFound": "No se encontraron episodios",
+  "@noEpisodesFound": {
+    "description": "Mensaje cuando no hay episodios"
+  },
+
+  "information": "Información",
+  "@information": {
+    "description": "Título de la sección de información"
+  },
+
+  "credits": "Créditos",
+  "@credits": {
+    "description": "Título de la página de créditos"
+  },
+
+  "nameRequired": "El nombre es obligatorio",
+  "@nameRequired": {
+    "description": "Mensaje de validación para nombre vacío"
+  },
+
+  "characterTypeParasite": "Parásito",
+  "@characterTypeParasite": {
+    "description": "Tipo de personaje: parásito"
+  },
+
+  "characterTypeRobot": "Robot",
+  "@characterTypeRobot": {
+    "description": "Tipo de personaje: robot"
+  },
+
+  "characterTypeHumanoid": "Humanoide",
+  "@characterTypeHumanoid": {
+    "description": "Tipo de personaje: humanoide"
+  },
+
+  "characterTypeSuperhuman": "Superhumano",
+  "@characterTypeSuperhuman": {
+    "description": "Tipo de personaje: superhumano"
+  },
+
+  "characterTypeUnknown": "Desconocido",
+  "@characterTypeUnknown": {
+    "description": "Tipo de personaje: desconocido"
+  },
+
+  "welcomeBack": "¡Bienvenido de nuevo!",
+  "@welcomeBack": {
+    "description": "Saludo de bienvenida en la página de inicio de sesión"
+  },
+
+  "noResidentsFound": "No se encontraron residentes",
+  "@noResidentsFound": {
+    "description": "Mensaje cuando no hay residentes"
+  },
+
+  "noCharactersFound": "No se encontraron personajes",
+  "@noCharactersFound": {
+    "description": "Mensaje cuando no hay personajes"
+  },
+
+  "birthDate": "Fecha de Nacimiento",
+  "@birthDate": {
+    "description": "Etiqueta del campo de fecha de nacimiento"
+  },
+
+  "registerSuccess": "¡Cuenta creada exitosamente!",
+  "@registerSuccess": {
+    "description": "Mensaje de éxito de registro"
+  },
+
+  "locationTypeMicroverse": "Microverso",
+  "@locationTypeMicroverse": {
+    "description": "Tipo de ubicación: Microverso"
+  },
+
+  "locationTypeTv": "TV",
+  "@locationTypeTv": {
+    "description": "Tipo de ubicación: TV"
+  },
+
+  "locationTypeResort": "Resort",
+  "@locationTypeResort": {
+    "description": "Tipo de ubicación: Resort"
+  },
+
+  "locationTypeDimension": "Dimensión",
+  "@locationTypeDimension": {
+    "description": "Tipo de ubicación: Dimensión"
+  },
+
+  "locationTypeDream": "Sueño",
+  "@locationTypeDream": {
+    "description": "Tipo de ubicación: Sueño"
+  },
+
+  "locationTypeFantasyTown": "Pueblo Fantástico",
+  "@locationTypeFantasyTown": {
+    "description": "Tipo de ubicación: Pueblo Fantástico"
+  },
+
+  "locationTypeMenagerie": "Menagerie",
+  "@locationTypeMenagerie": {
+    "description": "Tipo de ubicación: Menagerie"
+  },
+
+  "locationTypeGame": "Juego",
+  "@locationTypeGame": {
+    "description": "Tipo de ubicación: Juego"
+  },
+
+  "locationTypeCustoms": "Aduana",
+  "@locationTypeCustoms": {
+    "description": "Tipo de ubicación: Aduana"
+  },
+
+  "locationTypePoliceStation": "Estación de Policía",
+  "@locationTypePoliceStation": {
+    "description": "Tipo de ubicación: Estación de Policía"
+  },
+
+  "locationTypeArcade": "Arcade",
+  "@locationTypeArcade": {
+    "description": "Tipo de ubicación: Arcade"
+  },
+
+  "locationTypeQuadrant": "Cuadrante",
+  "@locationTypeQuadrant": {
+    "description": "Tipo de ubicación: Cuadrante"
+  },
+
+  "locationTypeSpacecraft": "Nave Espacial",
+  "@locationTypeSpacecraft": {
+    "description": "Tipo de ubicación: Nave Espacial"
+  },
+
+  "locationTypeMount": "Montaña",
+  "@locationTypeMount": {
+    "description": "Tipo de ubicación: Montaña"
+  },
+
+  "locationTypeCluster": "Grupo",
+  "@locationTypeCluster": {
+    "description": "Tipo de ubicación: Grupo"
+  },
+
+  "locationTypeUnknown": "Desconocido",
+  "@locationTypeUnknown": {
+    "description": "Tipo de ubicación: Desconocido"
+  },
+
+  "residents": "Residentes",
+  "@residents": {
+    "description": "Título de la sección de residentes"
+  },
+
+  "airDate": "Fecha de Emisión",
+  "@airDate": {
+    "description": "Etiqueta de fecha de emisión del episodio"
+  },
+
+  "enterAgain": "Ingresar de nuevo",
+  "@enterAgain": {
+    "description": "Texto del botón de ingresar de nuevo para login biométrico"
+  },
+
+  "loginToContinue": "Inicie sesión para continuar",
+  "@loginToContinue": {
+    "description": "Mensaje de iniciar sesión para continuar"
+  },
+
+  "nameLabel": "Nombre",
+  "@nameLabel": {
+    "description": "Etiqueta del campo de nombre"
+  },
+
+  "season": "Temporada",
+  "@season": {
+    "description": "Etiqueta de temporada para episodios"
+  }
+}
